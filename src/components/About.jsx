@@ -16,7 +16,7 @@ export const About = () => {
         {/**Right Side */}
         <div class="w-full max-w-md text-lg leading-relaxed text-gray-700">
           <h1 class="">
-            Born and raised on the central coast, I, Adam Henry Bucholtz, am currently a student attending California 
+            Born and raised on the central coast, I, <b>Adam Henry Bucholtz</b>, am currently a student attending California 
             Polytechnic University Pomona pursuing a Bachelors of Architecture. I look forward to working on design that 
             emphasizes the needs of the public and the communities he serves as well as 
             unconventional applications of architecture.

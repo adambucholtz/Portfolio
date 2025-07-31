@@ -12,7 +12,7 @@ export const Hero = () => {
         <div className="absolute text-center z-10 max-w-xl p-10 left-28">
           <h2 className="font-tinos text-[#383839dd] pb-5 text-lg">Welcome to</h2>
           <h1 className="font-quint text-text-primary text-6xl lg:text-8xl">
-            My Portfolio
+            Adam's Portfolio
           </h1>
           <p className="font-tinos pt-10 pb-10 mt-4 text-lg text-[#383839dd] max-w-md">
             Discover my work, interesting projects, and progression over the years.
