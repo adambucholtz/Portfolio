@@ -25,7 +25,7 @@ const imagePaths = [
 ];
 
 const imageClass =
-  'h-full max-w-full rounded-lg opacity-30 hover:opacity-100 hover:scale-105 hover:shadow-xl transition-all duration-500 ease-in-out';
+  'h-full max-w-full rounded-lg opacity-30 hover:opacity-100 hover:scale-110 hover:shadow-xl transition-all duration-500 ease-in-out';
 
 export const Hero = () => {
   

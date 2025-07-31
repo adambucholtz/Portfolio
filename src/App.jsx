@@ -13,8 +13,8 @@ function App() {
       <Hero />
       <About />
       <Projects />
-      <Contact />
       <First_Project_oasis />
+      <Contact />
     </main>
   )
 }
