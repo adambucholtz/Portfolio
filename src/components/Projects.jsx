@@ -2,11 +2,11 @@ import React from 'react'
 
 const projectData = [
   {
-    title: "Project #1",
+    title: "The Oasis",
     description:
-      "Project 1 description...",
+      "When you think about the Oasis, it evokes strong feelings of...",
     image: "/photos/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_012.jpg",
-    link: "#",
+    link: "#First_Project_oasis",
   },
   {
     title: "Project #2",
@@ -36,13 +36,6 @@ const projectData = [
     image: "/photos/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_09.jpg",
     link: "#",
   },
-  {
-    title: "Project #6",
-    description:
-      "Project 6 description...",
-    image: "/photos/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_09.jpg",
-    link: "#",
-  },
 ];
 
 export const Projects = () => {
@@ -53,7 +46,7 @@ export const Projects = () => {
         {projectData.map((project, index) => (
           <div
             key={index}
-            className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+            className="max-w-sm bg-[#0e3249] border border-[#d6c7a1] rounded-lg shadow-md transition-transform hover:scale-[1.02]"
           >
             <a href={project.link}>
               <img className="rounded-t-lg w-full h-48 object-cover" src={project.image} alt={project.title} />
@@ -69,7 +62,7 @@ export const Projects = () => {
               </p>
               <a
                 href={project.link}
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                className="inline-flex items-center px-4 py-1.5 text-sm font-medium bg-[#eaddc5] text-[#6b4f3b] rounded-full hover:bg-[#dbc6ac] transition-colors"
               >
                 Read more
                 <svg

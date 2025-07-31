@@ -3,7 +3,7 @@ import { Navbar } from "./components/Navbar"
 import { About } from "./components/About"
 import { Projects } from "./components/Projects"
 import { Contact } from "./components/Contact"
-import { Firstp } from "./components/projects-folder/Firstp"
+import { First_Project_oasis } from "./components/projects-folder/First_Project_oasis"
 
 function App() {
   
@@ -14,7 +14,7 @@ function App() {
       <About />
       <Projects />
       <Contact />
-      <Firstp />
+      <First_Project_oasis />
     </main>
   )
 }
