@@ -62,7 +62,7 @@ export const Projects = () => {
               </p>
               <a
                 href={project.link}
-                className="inline-flex items-center px-4 py-1.5 text-sm font-medium bg-[#eaddc5] text-[#6b4f3b] rounded-full hover:bg-[#dbc6ac] transition-colors"
+                className="inline-flex items-center px-4 py-1.5 text-sm font-medium bg-[#e7cd9d] text-[#6b4f3b] rounded-full hover:bg-[#dbc6ac] transition-colors"
               >
                 Read more
                 <svg
