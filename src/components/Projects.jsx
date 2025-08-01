@@ -9,31 +9,31 @@ const projectData = [
     link: "#First_Project_oasis",
   },
   {
-    title: "Project #2",
+    title: "Fan - Subtract - Bridge",
     description:
-      "Project 2 description...",
-    image: "/photos/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_010.jpg",
+      "Want to see a boomarang looking ahh building ...",
+    image: "/photos/arc-pic-5.jpeg",
     link: "#",
   },
   {
-    title: "Project #3",
+    title: "The Shift",
     description:
-      "Project 3 description...",
-    image: "/photos/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_09.jpg",
+      "Basis of the design was formulated in exercise one through photographing a tree resembling that of a...",
+    image: "/photos/arc-pic-4.png",
     link: "#",
   },
   {
-    title: "Project #4",
+    title: "Leimert Park Community Arts Center",
     description:
-      "Project 4 description...",
-    image: "/photos/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_09.jpg",
+      "The main idea of this project is exploring the variation of the grid in previous renditions to develop varying spaces, depth, and...",
+    image: "/photos/Second_Year_1.png",
     link: "#",
   },
   {
-    title: "Project #5",
+    title: "The Network",
     description:
-      "Project 5 description...",
-    image: "/photos/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_09.jpg",
+      "The Network addresses the desired agency sought after by the target demographic of temporary occupants...",
+    image: "/photos/arch-pic-3.png",
     link: "#",
   },
 ];
