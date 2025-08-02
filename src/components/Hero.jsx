@@ -3,24 +3,24 @@ import 'flowbite'
 
 const imagePaths = [
   [
-    '/photos/THIRD YEAR SPRING - Oasis/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_0.jpg',
-    '/photos/THIRD YEAR SPRING - Oasis/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_06.jpg',
-    '/photos/THIRD YEAR SPRING - Oasis/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_012.jpg',
+    '/photos/THIRD YEAR SPRING - Oasis/Oasis-1.jpg',
+    '/photos/SPRING SECOND YEAR - Shift/Shift-Render-Lobby.png',
+    '/photos/SPRING SECOND YEAR - Shift/Shift-Render-1.png',
   ],
   [
-    '/photos/THIRD YEAR SPRING - Oasis/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_07.jpg',
-    '/photos/FALL SECOND YEAR/Hero_Background_Portfolio.png',
-    '/photos/THIRD YEAR SPRING - Oasis/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_09.jpg',
+    '/photos/SPRING SECOND YEAR - Shift/Shift-Model-1.png',
+    '/photos/FALL SECOND YEAR/Leimert-1.png',
+    '/photos/CONSTRUCTION SET - Network/Network-5.png',
   ],
   [
-    '/photos/THIRD YEAR SPRING - Oasis/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_010.jpg',
-    '/photos/FALL SECOND YEAR/Second_Year_1.png',
-    '/photos/THIRD YEAR SPRING - Oasis/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_011.jpg',
+    '/photos/CONSTRUCTION SET - Network/Network-6.png',
+    '/photos/FALL SECOND YEAR/Leimert-2.png',
+    '/photos/THIRD YEAR SPRING - Oasis/Oasis-5.jpg',
   ],
   [
-    '/photos/THIRD YEAR SPRING - Oasis/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_03.jpg',
-    '/photos/FALL SECOND YEAR/arch-pic-1.png',
-    '/photos/FALL SECOND YEAR/arch-pic-2.png',
+    '/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Model-1.png',
+    '/photos/FALL SECOND YEAR/Leimert-3.png',
+    '/photos/FALL SECOND YEAR/Leimert-4.png',
   ],
 ];
 

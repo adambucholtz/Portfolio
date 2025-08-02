@@ -55,12 +55,12 @@ export const First_Project_oasis = () => {
         {/* Images */}
         <div className="grid md:grid-cols-2 gap-8 mb-10">
           <img
-            src="/photos/THIRD YEAR SPRING - Oasis/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_012.jpg"
+            src="/photos/THIRD YEAR SPRING - Oasis/Oasis-11.jpg"
             alt="Exterior View from Degnan Boulevard"
             className="rounded-lg shadow-md w-full object-cover"
           />
           <img
-            src="/photos/THIRD YEAR SPRING - Oasis/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_010.jpg"
+            src="/photos/THIRD YEAR SPRING - Oasis/Oasis-9.jpg"
             alt="Community Musical Showcase Room"
             className="rounded-lg shadow-md w-full object-cover"
           />
@@ -68,12 +68,12 @@ export const First_Project_oasis = () => {
 
         <div className="grid md:grid-cols-2 gap-8 mb-10">
           <img
-            src="/photos/THIRD YEAR SPRING - Oasis/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_09.jpg"
+            src="/photos/THIRD YEAR SPRING - Oasis/Oasis-8.jpg"
             alt="Interior Circulation and Gallery"
             className="rounded-lg shadow-md w-full object-cover"
           />
           <img
-            src="/photos/THIRD YEAR SPRING - Oasis/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_011.jpg"
+            src="/photos/THIRD YEAR SPRING - Oasis/Oasis-10.jpg"
             alt="Axonometric Section"
             className="rounded-lg shadow-md w-full object-cover"
           />
