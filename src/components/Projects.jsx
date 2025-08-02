@@ -5,7 +5,7 @@ const projectData = [
     title: "The Oasis",
     description:
       "When you think about the Oasis, it evokes strong feelings of...",
-    image: "/photos/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_012.jpg",
+    image: "/photos/THIRD YEAR SPRING - Oasis/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_0.jpg",
     link: "#First_Project_oasis",
   },
   {
@@ -26,7 +26,7 @@ const projectData = [
     title: "Leimert Park Community Arts Center",
     description:
       "The main idea of this project is exploring the variation of the grid in previous renditions to develop varying spaces, depth, and...",
-    image: "/photos/Second_Year_1.png",
+    image: "/photos/FALL SECOND YEAR/Second_Year_1.png",
     link: "#",
   },
   {

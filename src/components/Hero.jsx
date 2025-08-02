@@ -3,24 +3,24 @@ import 'flowbite'
 
 const imagePaths = [
   [
-    '/photos/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_0.jpg',
-    '/photos/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_06.jpg',
-    '/photos/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_012.jpg',
+    '/photos/THIRD YEAR SPRING - Oasis/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_0.jpg',
+    '/photos/THIRD YEAR SPRING - Oasis/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_06.jpg',
+    '/photos/THIRD YEAR SPRING - Oasis/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_012.jpg',
   ],
   [
-    '/photos/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_07.jpg',
-    '/photos/Hero_Background_Portfolio.png',
-    '/photos/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_09.jpg',
+    '/photos/THIRD YEAR SPRING - Oasis/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_07.jpg',
+    '/photos/FALL SECOND YEAR/Hero_Background_Portfolio.png',
+    '/photos/THIRD YEAR SPRING - Oasis/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_09.jpg',
   ],
   [
-    '/photos/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_010.jpg',
-    '/photos/Second_Year_1.png',
-    '/photos/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_011.jpg',
+    '/photos/THIRD YEAR SPRING - Oasis/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_010.jpg',
+    '/photos/FALL SECOND YEAR/Second_Year_1.png',
+    '/photos/THIRD YEAR SPRING - Oasis/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_011.jpg',
   ],
   [
-    '/photos/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_03.jpg',
-    '/photos/arch-pic-1.png',
-    '/photos/arch-pic-2.png',
+    '/photos/THIRD YEAR SPRING - Oasis/2025S_ARC3021A_02_Lords_Bucholtz_Adam_M2_03.jpg',
+    '/photos/FALL SECOND YEAR/arch-pic-1.png',
+    '/photos/FALL SECOND YEAR/arch-pic-2.png',
   ],
 ];
 
