@@ -10,7 +10,7 @@ const imagePaths = [
   [
     '/photos/SPRING SECOND YEAR - Shift/Shift-Model-1.png',
     '/photos/FALL SECOND YEAR/Leimert-1.png',
-    '/photos/CONSTRUCTION SET - Network/Network-5.png',
+    '/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-1.jpeg',
   ],
   [
     '/photos/CONSTRUCTION SET - Network/Network-6.png',

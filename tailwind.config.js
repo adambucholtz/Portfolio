@@ -14,6 +14,7 @@ export default {
       fontFamily: {
         'quint': ['Quintessential', 'sans-serif'],
         'tinos': ['Tinos', 'sans-serif'],
+        helvetica: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'], 
       },
       colors: {
         'primary-theme': '#f5f1e5',

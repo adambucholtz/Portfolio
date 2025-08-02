@@ -1,22 +1,72 @@
 import React from 'react'
 
+
+const oasisImages = [
+  "Oasis-11.jpg",
+  "Oasis-2.jpg",
+  "Oasis-3.jpg",
+  "Oasis-4.jpg",
+  "Oasis-5.jpg",
+  "Oasis-6.jpg",
+  "Oasis-7.jpg",
+  "Oasis-8.jpg",
+  "Oasis-9.jpg",
+];
+
 export const First_Project_oasis = () => {
   return (
-    <section id="First_Project_oasis" className="w-screen bg-[#fdfaf5] text-[#1e1e1e] py-20 px-4">
+    <div id="First_Project_oasis" className="w-screen bg-[#fdfaf5] text-[#1e1e1e] py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-5xl font-bold mb-10 text-center">The Oasis</h2>
 
         {/* Main Description */}
-        <p className="text-lg leading-relaxed whitespace-pre-line mb-10">
+        <p className="text-lg font-helvetica leading-relaxed whitespace-pre-line mb-10">
           When you think of an <strong>oasis</strong>, it evokes strong feelings of ease, desire, and having your needs met. Not only does the
           project focus on accommodating the needs of one specific demographic but a collective of a diverse demographic, first
           time dwelling owners in the rise of increasing housing instability. The project aims to satisfy the varying needs for all
           of these users in what many consider a very prescriptive area of architecture, housing. One of the common themes that
           drove the project forward was individuality and uniqueness. These themes, supported by giving users agency, helped
           inform the decisions that developed the project. It became a conversation about how it is possible to maximize the
-          differences within the project, while still maintaining a collective look.
-          <br></br>
-          <br></br>
+          differences within the project, while still maintaining a collective look. 
+        </p>
+          
+          {/* Image Carousel */}
+          <div id="controls-carousel" className="relative w-full" data-carousel="static">
+            <div className="relative h-[800px] overflow-hidden rounded-lg">
+              {oasisImages.map((img, index) => (
+                <div
+                  key={index}
+                  className={`hidden duration-700 ease-in-out`}
+                  data-carousel-item
+                >
+                  <img
+                    src={`/photos/THIRD YEAR SPRING - Oasis/${img}`}
+                    className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt=""
+                  />
+                </div>
+              ))}
+            </div>
+      
+              <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                      </svg>
+                      <span class="sr-only">Previous</span>
+                  </span>
+              </button>
+              <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                      <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                      </svg>
+                      <span class="sr-only">Next</span>
+                  </span>
+              </button>
+          </div>
+
+        <p className="text-lg font-helvetica leading-relaxed whitespace-pre-line mb-10">
           Architecturally, the project was developed from three separate and distinct massings that share a universal ideal. The
           towers vary in height, size, and lifestyle. The earthy red short yet long tower, adjacent to the train station houses the
           live work units. The red tower is long yet short, and has a dark red appearance. The orange tower stands as a medium
@@ -52,35 +102,7 @@ export const First_Project_oasis = () => {
           </div>
         </p>
 
-        {/* Images */}
-        <div className="grid md:grid-cols-2 gap-8 mb-10">
-          <img
-            src="/photos/THIRD YEAR SPRING - Oasis/Oasis-11.jpg"
-            alt="Exterior View from Degnan Boulevard"
-            className="rounded-lg shadow-md w-full object-cover"
-          />
-          <img
-            src="/photos/THIRD YEAR SPRING - Oasis/Oasis-9.jpg"
-            alt="Community Musical Showcase Room"
-            className="rounded-lg shadow-md w-full object-cover"
-          />
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-8 mb-10">
-          <img
-            src="/photos/THIRD YEAR SPRING - Oasis/Oasis-8.jpg"
-            alt="Interior Circulation and Gallery"
-            className="rounded-lg shadow-md w-full object-cover"
-          />
-          <img
-            src="/photos/THIRD YEAR SPRING - Oasis/Oasis-10.jpg"
-            alt="Axonometric Section"
-            className="rounded-lg shadow-md w-full object-cover"
-          />
-        </div>
-
-        {/* Optional: Add more description or image sets here */}
       </div>
-    </section>
+    </div>
   )
 }

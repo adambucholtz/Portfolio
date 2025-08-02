@@ -2,18 +2,18 @@ import React from 'react'
 
 const projectData = [
   {
-    title: "The Oasis",
-    description:
-      "When you think about the Oasis, it evokes strong feelings of...",
-    image: "/photos/THIRD YEAR SPRING - Oasis/Oasis-1.jpg",
-    link: "#First_Project_oasis",
-  },
-  {
     title: "Fan - Subtract - Bridge",
     description:
       "Want to see a boomarang looking ahh building ...",
     image: "/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-1.jpeg",
     link: "#",
+  },
+  {
+    title: "The Oasis",
+    description:
+      "When you think about the Oasis, it evokes strong feelings of...",
+    image: "/photos/THIRD YEAR SPRING - Oasis/Oasis-1.jpg",
+    link: "#First_Project_oasis",
   },
   {
     title: "The Shift",
@@ -30,7 +30,7 @@ const projectData = [
     link: "#",
   },
   {
-    title: "The Network",
+    title: "The Network - Group Work",
     description:
       "The Network addresses the desired agency sought after by the target demographic of temporary occupants...",
     image: "/photos/CONSTRUCTION SET - Network/Network-1.png",
@@ -41,7 +41,7 @@ const projectData = [
 export const Projects = () => {
   return (
     <div id="projects" className="relative min-h-screen w-screen bg-primary-theme px-4 py-16">
-      <h2 className="font-quint text-text-primary text-center text-6xl lg:text-8xl">Projects</h2>
+      <h2 className="font-quint text-text-primary text-center text-6xl lg:text-8xl">Selected Works</h2>
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-10">
         {projectData.map((project, index) => (
           <div

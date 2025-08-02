@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Navbar = () => {
 
-const navItems = ['about', 'projects', 'contact'];
+const navItems = ['about', 'works', 'contact'];
 
   return (
     <div 
