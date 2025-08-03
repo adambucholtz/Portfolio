@@ -4,7 +4,7 @@ const projectData = [
   {
     title: "Fan - Subtract - Bridge",
     description:
-      "Want to see a boomarang looking ahh building ...",
+      "The design and concept of this work was ...",
     image: "/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-1.jpeg",
     link: "#Project_fan_bridge",
   },
