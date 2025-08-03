@@ -13,7 +13,7 @@ export const Project_network = () => {
   return (
     <div id="Project_network" className="w-screen bg-[#fdfaf5] text-[#1e1e1e] py-16 px-4 md:px-10 lg:px-16 space-y-10">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-5xl font-bold text-justify">The Network</h2>
+        <h2 className="text-5xl font-bold text-justify">The Network - Group Work</h2>
 
         {/* Image Carousel */}
         <div id="controls-carousel" className="relative items-center justify-center w-5/6 mt-4 mb-12" data-carousel="static">
