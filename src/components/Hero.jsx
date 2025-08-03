@@ -13,7 +13,7 @@ const imagePaths = [
     '/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-1.jpeg',
   ],
   [
-    '/photos/CONSTRUCTION SET - Network/Network-6.png',
+    '/photos/SPRING SECOND YEAR - Shift/Shift-2.png',
     '/photos/FALL SECOND YEAR/Leimert-2.png',
     '/photos/THIRD YEAR SPRING - Oasis/Oasis-5.jpg',
   ],
@@ -43,7 +43,7 @@ export const Hero = () => {
       </div>
 
       {/* Gallery */}
-      <div className="flex w-full items-center justify-between">
+      <div className="flex w-full h-full object-contain items-center justify-between">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {imagePaths.map((column, colIndex) => (
             <div key={colIndex} className="grid gap-4">

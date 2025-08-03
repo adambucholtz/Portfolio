@@ -56,7 +56,7 @@ export const Navbar = () => {
                     </li>
                     <li>
                         <a href="#Project_network" className="block px-6 py-3 transition-all duration-300 hover:bg-[#f6f6f6] hover:pl-8 hover:shadow-inner">
-                        The Network
+                        The Network - Group Work
                         </a>
                     </li>
                     </ul>

@@ -16,7 +16,7 @@ export const Project_network = () => {
         <h2 className="text-5xl font-bold text-justify">The Network - Group Work</h2>
 
         {/* Image Carousel */}
-        <div id="controls-carousel" className="relative items-center justify-center w-5/6 mt-4 mb-12" data-carousel="static">
+        <div id="controls-carousel" className="relative items-center justify-center w-full mt-4 mb-12" data-carousel="static">
           <div className="relative h-[750px] overflow-hidden rounded-2xl shadow-xl">
             {networkImages.map((img, index) => (
               <div
@@ -26,7 +26,7 @@ export const Project_network = () => {
               >
                 <img
                   src={`/photos/CONSTRUCTION SET - Network/${img}`}
-                  className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  className="w-full h-full object-contain"
                   alt=""
                 />
               </div>
