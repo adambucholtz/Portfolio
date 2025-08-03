@@ -3,7 +3,7 @@ import { Navbar } from "./components/Navbar"
 import { About } from "./components/About"
 import { Projects } from "./components/Projects"
 import { Contact } from "./components/Contact"
-import { First_Project_oasis } from "./components/projects-folder/First_Project_oasis"
+import { Project_oasis } from "./components/projects-folder/Project_oasis"
 
 function App() {
   
@@ -13,7 +13,7 @@ function App() {
       <Hero />
       <About />
       <Projects />
-      <First_Project_oasis />
+      <Project_oasis />
       <Contact />
     </main>
   )

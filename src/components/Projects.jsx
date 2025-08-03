@@ -6,41 +6,41 @@ const projectData = [
     description:
       "Want to see a boomarang looking ahh building ...",
     image: "/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-1.jpeg",
-    link: "#",
+    link: "#Project_fan_bridge",
   },
   {
     title: "The Oasis",
     description:
       "When you think about the Oasis, it evokes strong feelings of...",
     image: "/photos/THIRD YEAR SPRING - Oasis/Oasis-1.jpg",
-    link: "#First_Project_oasis",
+    link: "#Project_oasis",
   },
   {
     title: "The Shift",
     description:
       "Basis of the design was formulated in exercise one through photographing a tree resembling that of a...",
     image: "/photos/SPRING SECOND YEAR - Shift/Shift-1.png",
-    link: "#",
+    link: "#Project_shift",
   },
   {
     title: "Leimert Park Community Arts Center",
     description:
       "The main idea of this project is exploring the variation of the grid in previous renditions to develop varying spaces, depth, and...",
     image: "/photos/FALL SECOND YEAR/Leimert-1.png",
-    link: "#",
+    link: "#Project_leimert",
   },
   {
     title: "The Network - Group Work",
     description:
       "The Network addresses the desired agency sought after by the target demographic of temporary occupants...",
     image: "/photos/CONSTRUCTION SET - Network/Network-1.png",
-    link: "#",
+    link: "#Project_network",
   },
 ];
 
 export const Projects = () => {
   return (
-    <div id="projects" className="relative min-h-screen w-screen bg-primary-theme px-4 py-16">
+    <div id="works" className="relative min-h-screen w-screen bg-primary-theme px-4 py-16">
       <h2 className="font-quint text-text-primary text-center text-6xl lg:text-8xl">Selected Works</h2>
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-10">
         {projectData.map((project, index) => (
