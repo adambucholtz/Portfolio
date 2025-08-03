@@ -13,9 +13,9 @@ const imagePaths = [
     '/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-1.jpeg',
   ],
   [
-    '/photos/SPRING SECOND YEAR - Shift/Shift-2.png',
-    '/photos/FALL SECOND YEAR/Leimert-2.png',
     '/photos/THIRD YEAR SPRING - Oasis/Oasis-5.jpg',
+    '/photos/FALL SECOND YEAR/Leimert-2.png',
+    '/photos/SPRING SECOND YEAR - Shift/Shift-1.png',
   ],
   [
     '/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Model-1.png',

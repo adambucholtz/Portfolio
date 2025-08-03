@@ -3,8 +3,8 @@ import React from 'react'
 const fanBridgeImages = [
     "Fan-Bridge-1.jpeg",
     "Fan-Bridge-2.png",
-    "Fan-Bridge-2nd-Floor-Plan.png",
     "Fan-Bridge-3.png",
+    "Fan-Bridge-Data.png",
 ];
 
 export const Project_fan_bridge = () => {
@@ -12,9 +12,10 @@ export const Project_fan_bridge = () => {
     <div id="Project_fan_bridge" className="w-screen bg-[#fdfaf5] text-[#1e1e1e] py-16 px-4 md:px-10 lg:px-16 space-y-10">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-5xl font-bold text-justify">Fan - Subtract - Bridge</h2>
+        <h2>Mix, Sprinklered, Layer</h2>
 
         {/* Image Carousel */}
-        <div id="controls-carousel" className="relative items-center justify-center w-full mt-4 mb-12" data-carousel="static">
+        <div id="controls-carousel" className="relative items-center justify-center w-full mt-4 mb-20" data-carousel="static">
           <div className="relative h-[700px] overflow-hidden rounded-2xl shadow-xl">
             {fanBridgeImages.map((img, index) => (
               <div
@@ -50,51 +51,51 @@ export const Project_fan_bridge = () => {
         </div>
 
         {/* Main Description */}
-        <p className="text-lg font-helvetica leading-8 whitespace-pre-line text-justify indent-6 tracking-wide">
-          When you think of an <strong>oasis</strong>, it evokes strong feelings of ease, desire, and having your needs met. Not only does the
-          project focus on accommodating the needs of one specific demographic but a collective of a diverse demographic, first
-          time dwelling owners in the rise of increasing housing instability. The project aims to satisfy the varying needs for all
-          of these users in what many consider a very prescriptive area of architecture, housing. One of the common themes that
-          drove the project forward was individuality and uniqueness. These themes, supported by giving users agency, helped
-          inform the decisions that developed the project. It became a conversation about how it is possible to maximize the
-          differences within the project, while still maintaining a collective look. 
-        </p>
-        <br></br>
-        <p className="text-lg font-helvetica leading-8 whitespace-pre-line mb-16 text-justify indent-6 tracking-wide">
-          Architecturally, the project was developed from three separate and distinct massings that share a universal ideal. The
-          towers vary in height, size, and lifestyle. The earthy red short yet long tower, adjacent to the train station houses the
-          live work units. The red tower is long yet short, and has a dark red appearance. The orange tower stands as a medium
-          between the three, quite equal in proportion. Finally, the yellow tower is distinctly very tall but very thin. Through this
-          decision, each tower has its own construction type, appeal, and lifestyle but when looking afar at the overall campus, it
-          architecturally adheres to each other, within the desert southwest palette of Santa Ana, its context, and an overall
-          warmer feeling. The yellow tower is rotated for an ideal sun angle. The lowest level functions as the service floor as
-          well as a public center. The commercial sector lines the street adjacent to the most public aspect of the site, the train
-          station. The closer one moves towards the back of the parcel, the more private the spaces become, starting with the
-          cafe, then to the gym, and finally resolving to the residential lobby. The orientation of the towers shelter a central space
-          that is peaceful and quaint and steps down from the site continuing to reinforce a sheltered space for the users. This
-          space allows users to navigate to any area on the site, solidifying the project’s emphasis on user choice. The design of
-          the towers is to facilitate unique lifestyles for a variety of individuals that is both comforting and exciting.
-          <br></br>
-          <br></br>
-          <div className="text-center bg-white shadow-md rounded-xl p-6 mt-8 w-fit mx-auto border border-gray-200">
-            <strong>Building Data:</strong>
-            <br></br>
-            Total Building Area: 42,100ft
-            <br></br>
-            Lot Coverage: 45%
-            <br></br>
-            Total Units: 32
-            <br></br>
-            Live/Work Units: 6
-            <br></br>
-            2 Bedroom Units: 6
-            <br></br>
-            1 Bedroom Units: 8
-            <br></br>
-            Studio Units: 12
-            <br></br>
-          </div>
-        </p>
+        <div className="space-y-16">
+            {/* Section 1 */}
+            <div className="flex flex-col lg:flex-row items-center gap-10">
+                <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
+                <h3 className="text-2xl font-semibold">Occupancy & Height</h3>
+                <p>Levels 1 & 2 are classified as <strong>Business (B)</strong>, and Level 3 is classified as <strong>Residential (R-2)</strong>.</p>
+                <p>The building is designed to a <strong>Code Height</strong> of <strong>60'-0"</strong> and <strong>4 stories</strong>, constructed using <strong>Type IVA</strong> fire-resistive construction.</p>
+                <p>Sprinklered according to <strong>NFPA-13 (903.3.1.1)</strong> for increased safety and allowable limits.</p>
+                </div>
+                <img src="/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-2nd-Floor-Plan.png" className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain" alt="" />
+            </div>
+
+            {/* Section 2 */}
+            <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
+                <img src="/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Section-EW-NS.png" className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain" alt="" />
+                <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
+                <h3 className="text-2xl font-semibold">Material & Exterior Systems</h3>
+                <p>Exterior walls are constructed from <strong>noncombustible or ignition-resistant materials</strong> such as <em>Shou Sugi Ban</em> siding and stone paneling.</p>
+                <p>Windows meet CBC 708A standards with <strong>multi-pane tempered glazing</strong>.</p>
+                <p>Recycled aluminum louver shading and multi-pane glazing systems improve energy performance.</p>
+                </div>
+            </div>
+
+            {/* Section 3 */}
+            <div className="flex flex-col lg:flex-row items-center gap-10">
+                <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
+                <h3 className="text-2xl font-semibold">Fire & Egress</h3>
+                <p>All common paths of egress are under <strong>125'</strong>, complying with IBC Table 1006.2.1 for R-2 occupancies.</p>
+                <p>Exit separation exceeds the 1/3 diagonal requirement, with <strong>100'</strong> provided against the <strong>30'</strong> minimum required.</p>
+                <p>Handrails maintain <strong>1½" clearance</strong> from adjacent surfaces and are free from sharp elements as per CBC 1014.7.</p>
+                </div>
+                <img src="/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-3rd-Floor-Plan.png" className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain" alt="" />
+            </div>
+
+            {/* Section 4 */}
+            <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
+                <img src="/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Section-EW-NS.png" className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain" alt="" />
+                <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
+                <h3 className="text-2xl font-semibold">Assembly & Details</h3>
+                <p>Stone Paneling assembly includes <strong>8" batt insulation</strong>, <strong>3" rigid insulation</strong>, air space, clips, and variable-sized stone panels over gypsum and AVB barriers.</p>
+                <p>Shou Sugi Ban siding features an ignition-resistant layered build over gypsum and batt insulation.</p>
+                <p>Roof edge includes a stainless coping with drip edge, ZIP system sheathing, and closed-cell spray foam for high thermal resistance.</p>
+                </div>
+            </div>
+        </div>
 
       </div>
     </div>

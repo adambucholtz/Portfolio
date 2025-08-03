@@ -1,25 +1,26 @@
 import React from 'react'
 
 const oasisImages = [
+  "Oasis-1.jpg",
   "Oasis-11.jpg",
+  "Oasis-5.jpg",
   "Oasis-2.jpg",
   "Oasis-3.jpg",
   "Oasis-4.jpg",
-  "Oasis-5.jpg",
   "Oasis-6.jpg",
   "Oasis-7.jpg",
   "Oasis-8.jpg",
-  "Oasis-9.jpg",
 ];
 
 export const Project_oasis = () => {
   return (
-    <div id="Project_oasis" className="w-screen bg-[#fdfaf5] text-[#1e1e1e] py-16 px-4 md:px-10 lg:px-16 space-y-10">
+    <div id="Project_oasis" className="w-screen bg-[#fffefb] text-[#1e1e1e] py-16 px-4 md:px-10 lg:px-16 space-y-10">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-5xl font-bold text-justify">The Oasis</h2>
+        <h2>Public, Contextual, Pluralistic, Hierarchical, Serene</h2>
 
         {/* Image Carousel */}
-        <div id="controls-carousel" className="relative items-center justify-center w-full mt-4 mb-12" data-carousel="static">
+        <div id="controls-carousel" className="relative items-center justify-center w-full mt-4 mb-20" data-carousel="static">
           <div className="relative h-[750px] overflow-hidden rounded-2xl shadow-xl">
             {oasisImages.map((img, index) => (
               <div
@@ -55,24 +56,44 @@ export const Project_oasis = () => {
         </div>
 
         {/* Main Description */}
-        <p className="text-lg font-helvetica leading-8 whitespace-pre-line text-justify indent-6 tracking-wide">
-          When you think of an <strong>oasis</strong>, it evokes strong feelings of ease, desire, and having your needs met. Not only does the
-          project focus on accommodating the needs of one specific demographic but a collective of a diverse demographic, first
-          time dwelling owners in the rise of increasing housing instability. The project aims to satisfy the varying needs for all
-          of these users in what many consider a very prescriptive area of architecture, housing. One of the common themes that
-          drove the project forward was individuality and uniqueness. These themes, supported by giving users agency, helped
-          inform the decisions that developed the project. It became a conversation about how it is possible to maximize the
-          differences within the project, while still maintaining a collective look. 
-        </p>
+        <div className="space-y-16">
+            {/* Section 1 */}
+            <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
+                <img src="/photos/THIRD YEAR SPRING - Oasis/Oasis-3.jpg" className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain" alt="" />
+                <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
+                <p className="text-lg font-helvetica leading-8 whitespace-pre-line text-justify indent-6 tracking-wide">
+                When you think of an <strong>oasis</strong>, it evokes strong feelings of ease, desire, and having your needs met. Not only does the
+                project focus on accommodating the needs of one specific demographic but a collective of a diverse demographic, first
+                time dwelling owners in the rise of increasing housing instability. The project aims to satisfy the varying needs for all
+                of these users in what many consider a very prescriptive area of architecture, housing. One of the common themes that
+                drove the project forward was individuality and uniqueness. These themes, supported by giving users agency, helped
+                inform the decisions that developed the project. It became a conversation about how it is possible to maximize the
+                differences within the project, while still maintaining a collective look. 
+                </p>
+                </div>
+            </div>
+
+            {/* Section 2 */}
+            <div className="flex flex-col lg:flex-row items-center gap-10">
+                <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
+                <p className="text-lg font-helvetica leading-8 whitespace-pre-line mb-16 text-justify indent-6 tracking-wide">
+                Architecturally, the project was developed from three separate and distinct massings that share a universal ideal. The
+                towers vary in height, size, and lifestyle. The earthy red short yet long tower, adjacent to the train station houses the
+                live work units. The red tower is long yet short, and has a dark red appearance. The orange tower stands as a medium
+                between the three, quite equal in proportion. Finally, the yellow tower is distinctly very tall but very thin. Through this
+                decision, each tower has its own construction type, appeal, and lifestyle but when looking afar at the overall campus, it
+                architecturally adheres to each other, within the desert southwest palette of Santa Ana, its context, and an overall
+                warmer feeling. The yellow tower is rotated for an ideal sun angle. 
+                </p>
+                </div>
+                <img src="/photos/THIRD YEAR SPRING - Oasis/Oasis-7.jpg" className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain" alt="" />
+            </div>
+        </div>
+
+
         <br></br>
         <p className="text-lg font-helvetica leading-8 whitespace-pre-line mb-16 text-justify indent-6 tracking-wide">
-          Architecturally, the project was developed from three separate and distinct massings that share a universal ideal. The
-          towers vary in height, size, and lifestyle. The earthy red short yet long tower, adjacent to the train station houses the
-          live work units. The red tower is long yet short, and has a dark red appearance. The orange tower stands as a medium
-          between the three, quite equal in proportion. Finally, the yellow tower is distinctly very tall but very thin. Through this
-          decision, each tower has its own construction type, appeal, and lifestyle but when looking afar at the overall campus, it
-          architecturally adheres to each other, within the desert southwest palette of Santa Ana, its context, and an overall
-          warmer feeling. The yellow tower is rotated for an ideal sun angle. The lowest level functions as the service floor as
+          The lowest level functions as the service floor as
           well as a public center. The commercial sector lines the street adjacent to the most public aspect of the site, the train
           station. The closer one moves towards the back of the parcel, the more private the spaces become, starting with the
           cafe, then to the gym, and finally resolving to the residential lobby. The orientation of the towers shelter a central space

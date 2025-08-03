@@ -14,9 +14,10 @@ export const Project_network = () => {
     <div id="Project_network" className="w-screen bg-[#fdfaf5] text-[#1e1e1e] py-16 px-4 md:px-10 lg:px-16 space-y-10">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-5xl font-bold text-justify">The Network - Group Work</h2>
+        <h2>Residential, Circulation Path, Three Towers</h2>
 
         {/* Image Carousel */}
-        <div id="controls-carousel" className="relative items-center justify-center w-full mt-4 mb-12" data-carousel="static">
+        <div id="controls-carousel" className="relative items-center justify-center w-full mt-4 mb-20" data-carousel="static">
           <div className="relative h-[750px] overflow-hidden rounded-2xl shadow-xl">
             {networkImages.map((img, index) => (
               <div
@@ -52,52 +53,71 @@ export const Project_network = () => {
         </div>
 
         {/* Main Description */}
-        <p className="text-lg font-helvetica leading-8 whitespace-pre-line text-justify indent-6 tracking-wide">
-          When you think of an <strong>oasis</strong>, it evokes strong feelings of ease, desire, and having your needs met. Not only does the
-          project focus on accommodating the needs of one specific demographic but a collective of a diverse demographic, first
-          time dwelling owners in the rise of increasing housing instability. The project aims to satisfy the varying needs for all
-          of these users in what many consider a very prescriptive area of architecture, housing. One of the common themes that
-          drove the project forward was individuality and uniqueness. These themes, supported by giving users agency, helped
-          inform the decisions that developed the project. It became a conversation about how it is possible to maximize the
-          differences within the project, while still maintaining a collective look. 
-        </p>
-        <br></br>
-        <p className="text-lg font-helvetica leading-8 whitespace-pre-line mb-16 text-justify indent-6 tracking-wide">
-          Architecturally, the project was developed from three separate and distinct massings that share a universal ideal. The
-          towers vary in height, size, and lifestyle. The earthy red short yet long tower, adjacent to the train station houses the
-          live work units. The red tower is long yet short, and has a dark red appearance. The orange tower stands as a medium
-          between the three, quite equal in proportion. Finally, the yellow tower is distinctly very tall but very thin. Through this
-          decision, each tower has its own construction type, appeal, and lifestyle but when looking afar at the overall campus, it
-          architecturally adheres to each other, within the desert southwest palette of Santa Ana, its context, and an overall
-          warmer feeling. The yellow tower is rotated for an ideal sun angle. The lowest level functions as the service floor as
-          well as a public center. The commercial sector lines the street adjacent to the most public aspect of the site, the train
-          station. The closer one moves towards the back of the parcel, the more private the spaces become, starting with the
-          cafe, then to the gym, and finally resolving to the residential lobby. The orientation of the towers shelter a central space
-          that is peaceful and quaint and steps down from the site continuing to reinforce a sheltered space for the users. This
-          space allows users to navigate to any area on the site, solidifying the project’s emphasis on user choice. The design of
-          the towers is to facilitate unique lifestyles for a variety of individuals that is both comforting and exciting.
-          <br></br>
-          <br></br>
-          <div className="text-center bg-white shadow-md rounded-xl p-6 mt-8 w-fit mx-auto border border-gray-200">
-            <strong>Building Data:</strong>
-            <br></br>
-            Total Building Area: 42,100ft
-            <br></br>
-            Lot Coverage: 45%
-            <br></br>
-            Total Units: 32
-            <br></br>
-            Live/Work Units: 6
-            <br></br>
-            2 Bedroom Units: 6
-            <br></br>
-            1 Bedroom Units: 8
-            <br></br>
-            Studio Units: 12
-            <br></br>
-          </div>
-        </p>
+        <div className="space-y-16">
+            {/* Section 1 */}
+            <div className="flex flex-col lg:flex-row items-center gap-10">
+                <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
+                <p>
+                    The Network addresses the desired agency sought after by the target 
+                    demographic of temporary occupants, generally ranging from the ages of 
+                    twenty to mid-thirties, by providing an individualized experience for each 
+                    resident, prioritizing a theatrical circulation path that relieves into individual 
+                    paths for each resident. The three towers of the Network each serve a 
+                    different sub genre within the overall target demographic, consisting of four 
+                    unit types, with each type having three different configurations, resulting in a 
+                    total of twelve unique unit plans. The live-work units are located in the 
+                    largest tower, along the edge of the street across from the transit center. 
+                    This orientation best allows for visitors of the live-work units, who may not 
+                    be living in the units but have business to attend to with the renters, a 
+                    separately desired circulation path, being the egress stairs that are tucked in 
+                    between the live-work units. This however, is not a limitation, as if desired, 
+                    the central circulation path is open to all on the site.
+                </p>
+                </div>
+                <img src="/photos/CONSTRUCTION SET - Network/Network-4.png" className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain" alt="" />
+            </div>
 
+            {/* Section 2 */}
+            <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
+                <img src="/photos/CONSTRUCTION SET - Network/Network-5.png" className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain" alt="" />
+                <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
+                <p>
+                    Adjacent to the live
+                    work units, the two-bedroom units share the parti wall. The two-bedroom 
+                    units have three configurations for three different residential preferences; an 
+                    internalized balcony within the middle of the unit, which is easily accessible 
+                    and acts as a common room of sorts, an external balcony at the corner of 
+                    the non-parti wall, which has semi-private balcony access, as it is tucked at 
+                    the end of the hall, and lastly the external balcony attached to the two 
+                    bedrooms, providing the most privacy of the three balconies. This logic is 
+                    repeated within the one-bedroom and studio units as well, with the plans 
+                    varying every three floors. No two balconies face on another, in order to 
+                    convey a feeling of ownership over ones space. 
+                </p>
+                </div>
+            </div>
+
+            {/* Section 3 */}
+            <div className="flex flex-col lg:flex-row items-center gap-10">
+                <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
+                <p>
+                    The less subtle attraction of the Network is the “network” itself, the series of 
+                    walkways that sit within the empty space of the three towers.  The series of 
+                    six walkways features three stair variations which all discharge to a 
+                    communal outdoor balcony space. Where these spaces are located 
+                    determines the orientation of the balconies within the buildings, and whether 
+                    they face away from the parcel or to the neighboring parcels, providing 
+                    privacy in small outdoor spaces “owned” by the occupants. The upper level 
+                    outdoor spaces created by the balconies are medium sized spaces, 
+                    anticipated for small gatherings or individual activity that requires a slightly 
+                    larger space. The ground floor provides the largest outdoor spaces, 
+                    allocated for large outdoor gatherings like barbecues, park games, and 
+                    larger party events
+                </p>
+                </div>
+                <img src="/photos/CONSTRUCTION SET - Network/Network-6.png" className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain" alt="" />
+            </div>
+        </div>
       </div>
     </div>
   )

@@ -3,7 +3,6 @@ import React from 'react'
 const leimertImages = [
   "Leimert-1.png",
   "Leimert-2.png",
-  "Leimert-2nd-3rd-Plan.png",
   "Leimert-3.png",
   "Leimert-4.png",
 ];
@@ -13,9 +12,10 @@ export const Project_leimert = () => {
     <div id="Project_leimert" className="w-screen bg-[#fdfaf5] text-[#1e1e1e] py-16 px-4 md:px-10 lg:px-16 space-y-10">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-5xl font-bold text-justify">Leimert Park Community Arts Center</h2>
+        <h2>Public, Varying Space, Depth, Intrigue, Garden Space</h2>
 
         {/* Image Carousel */}
-        <div id="controls-carousel" className="relative items-center justify-center w-full mt-4 mb-12" data-carousel="static">
+        <div id="controls-carousel" className="relative items-center justify-center w-full mt-4 mb-20" data-carousel="static">
           <div className="relative h-[750px] overflow-hidden rounded-2xl shadow-xl">
             {leimertImages.map((img, index) => (
               <div
@@ -51,52 +51,54 @@ export const Project_leimert = () => {
         </div>
 
         {/* Main Description */}
-        <p className="text-lg font-helvetica leading-8 whitespace-pre-line text-justify indent-6 tracking-wide">
-          When you think of an <strong>oasis</strong>, it evokes strong feelings of ease, desire, and having your needs met. Not only does the
-          project focus on accommodating the needs of one specific demographic but a collective of a diverse demographic, first
-          time dwelling owners in the rise of increasing housing instability. The project aims to satisfy the varying needs for all
-          of these users in what many consider a very prescriptive area of architecture, housing. One of the common themes that
-          drove the project forward was individuality and uniqueness. These themes, supported by giving users agency, helped
-          inform the decisions that developed the project. It became a conversation about how it is possible to maximize the
-          differences within the project, while still maintaining a collective look. 
-        </p>
-        <br></br>
-        <p className="text-lg font-helvetica leading-8 whitespace-pre-line mb-16 text-justify indent-6 tracking-wide">
-          Architecturally, the project was developed from three separate and distinct massings that share a universal ideal. The
-          towers vary in height, size, and lifestyle. The earthy red short yet long tower, adjacent to the train station houses the
-          live work units. The red tower is long yet short, and has a dark red appearance. The orange tower stands as a medium
-          between the three, quite equal in proportion. Finally, the yellow tower is distinctly very tall but very thin. Through this
-          decision, each tower has its own construction type, appeal, and lifestyle but when looking afar at the overall campus, it
-          architecturally adheres to each other, within the desert southwest palette of Santa Ana, its context, and an overall
-          warmer feeling. The yellow tower is rotated for an ideal sun angle. The lowest level functions as the service floor as
-          well as a public center. The commercial sector lines the street adjacent to the most public aspect of the site, the train
-          station. The closer one moves towards the back of the parcel, the more private the spaces become, starting with the
-          cafe, then to the gym, and finally resolving to the residential lobby. The orientation of the towers shelter a central space
-          that is peaceful and quaint and steps down from the site continuing to reinforce a sheltered space for the users. This
-          space allows users to navigate to any area on the site, solidifying the project’s emphasis on user choice. The design of
-          the towers is to facilitate unique lifestyles for a variety of individuals that is both comforting and exciting.
-          <br></br>
-          <br></br>
-          <div className="text-center bg-white shadow-md rounded-xl p-6 mt-8 w-fit mx-auto border border-gray-200">
-            <strong>Building Data:</strong>
-            <br></br>
-            Total Building Area: 42,100ft
-            <br></br>
-            Lot Coverage: 45%
-            <br></br>
-            Total Units: 32
-            <br></br>
-            Live/Work Units: 6
-            <br></br>
-            2 Bedroom Units: 6
-            <br></br>
-            1 Bedroom Units: 8
-            <br></br>
-            Studio Units: 12
-            <br></br>
-          </div>
-        </p>
+        <div className="space-y-16">
+          {/* Section 1 */}
+            <div className="flex flex-col lg:flex-row items-center gap-10">
+                <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
+                <p>
+                  The main idea of this project is exploring the variation of the grid in previous 
+                  renditions to develop varying spaces, depth, and intrigue. The project utilizes 
+                  its variety and connects the variations together to form one cohesive through
+                  line with its circulation.
+                </p>
+                </div>
+                <img src="/photos/FALL SECOND YEAR/Leimert-2nd-3rd-Plan.png" className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain" alt="" />
+            </div>
 
+            {/* Section 2 */}
+            <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
+                <img src="/photos/FALL SECOND YEAR/Leimert-Sub-Ground-Plan.png" className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain" alt="" />
+                <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
+                <p>On the first floor users can enter through two main entrances. One accesses 
+                the cafe and the other to an information desk that peers into the auditorium be
+                low. There is a constant dialogue between outdoor and indoor spaces both with 
+                subtracting away from the mass and through glazing. The first floor exemplifies 
+                this dialogue. There is circulation between an outdoor patio space and an in
+                door workspace connected through the cafe and second gallery. The sub level 
+                slowly drops below the superstructure leading into a spacious lobby. From the 
+                lobby leads into the first gallery which showcases the prominent musical im
+                pact of the community. This gallery also is multi-heighted facilitating amble light 
+                and symbolically suggesting the scale of impact of the musical achievements 
+                of the community. </p>
+                </div>
+            </div>
+
+            {/* Section 3 */}
+            <div className="flex flex-col lg:flex-row items-center gap-10">
+                <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
+                <p>
+                  Another focus of the proposal is its connection with gardening. Inspired by 
+                  the Ron Finley Project there is an exterior space on the upper most corner 
+                  designed to facilitate a potential rooftop gardening space. Its large square 
+                  footage provides ample room to educate and cultivate and even section off a 
+                  space if a greenhouse is desired. Many of the spaces that open the elements 
+                  can be used to house a variety of plant life bringing the earth within and con
+                  tinuing a connection between exterior and interior.
+                </p>
+                </div>
+                <img src="/photos/FALL SECOND YEAR/Leimert-Cross-Section-B-C.png" className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain" alt="" />
+            </div>
+        </div>
       </div>
     </div>
   )
