@@ -27,41 +27,41 @@ export const Navbar = () => {
                 about
               </a>
 
-                {/* Works Dropdown */}
-                <div className="relative group">
+              {/* Works Dropdown */}
+              <div className="relative group">
                 <a href="#works" className="nav-hover-btn">
-                    works
+                  works
                 </a>
                 <div className="absolute mt-2 w-80 rounded-xl bg-primary-theme border border-black shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 pointer-events-auto">
-                    <ul className="py-2 text-base text-[#080808] font-tinos tracking-wide">
+                  <ul className="py-2 text-base text-[#080808] font-tinos tracking-wide">
                     <li>
-                        <a href="#Project_fan_bridge" className="block px-6 py-3 transition-all duration-300 hover:bg-[#f6f6f6] hover:pl-8 hover:shadow-inner">
-                        Fan - Subtract - Bridge
-                        </a>
+                      <a href="#Project_fan_bridge" className="block px-6 py-3 transition-all duration-300 hover:bg-[#f6f6f6] hover:pl-8 hover:shadow-inner">
+                        The Observatory
+                      </a>
                     </li>
                     <li>
-                        <a href="#Project_oasis" className="block px-6 py-3 transition-all duration-300 hover:bg-[#f6f6f6] hover:pl-8 hover:shadow-inner">
-                        The Oasis
-                        </a>
+                      <a href="#Project_oasis" className="block px-6 py-3 transition-all duration-300 hover:bg-[#f6f6f6] hover:pl-8 hover:shadow-inner">
+                        Oasis
+                      </a>
                     </li>
                     <li>
-                        <a href="#Project_leimert" className="block px-6 py-3 transition-all duration-300 hover:bg-[#f6f6f6] hover:pl-8 hover:shadow-inner">
+                      <a href="#Project_leimert" className="block px-6 py-3 transition-all duration-300 hover:bg-[#f6f6f6] hover:pl-8 hover:shadow-inner">
                         Leimert Park Arts Center
-                        </a>
+                      </a>
                     </li>
                     <li>
-                        <a href="#Project_shift" className="block px-6 py-3 transition-all duration-300 hover:bg-[#f6f6f6] hover:pl-8 hover:shadow-inner">
-                        The Shift
-                        </a>
+                      <a href="#Project_shift" className="block px-6 py-3 transition-all duration-300 hover:bg-[#f6f6f6] hover:pl-8 hover:shadow-inner">
+                        Shift
+                      </a>
                     </li>
                     <li>
-                        <a href="#Project_network" className="block px-6 py-3 transition-all duration-300 hover:bg-[#f6f6f6] hover:pl-8 hover:shadow-inner">
-                        The Network - Group Work
-                        </a>
+                      <a href="#Project_network" className="block px-6 py-3 transition-all duration-300 hover:bg-[#f6f6f6] hover:pl-8 hover:shadow-inner">
+                        Network - Group Work
+                      </a>
                     </li>
-                    </ul>
+                  </ul>
                 </div>
-                </div>
+              </div>
 
               {/* Contact Link */}
               <a href="#contact" className="nav-hover-btn">

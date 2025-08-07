@@ -5,7 +5,7 @@ export const About = () => {
     <div id="about" class="min-h-screen w-screen px-4 py-10 bg-gray-100">
       {/** Header */}
       <div class="flex-center pt-[60px] pb-12">
-        <h1 class="font-quint text-text-primary text-8xl underline">About</h1> 
+        <h1 class="font-helvetica text-text-primary text-8xl">About</h1>
       </div>
       {/**Content */}
       <div class="flex-center flex-col lg:flex-row items-center justify-center gap-12 max-w-7xl mx-auto">
@@ -16,16 +16,16 @@ export const About = () => {
         {/**Right Side */}
         <div class="w-full max-w-md text-lg leading-relaxed text-gray-700">
           <h1 className="font-helvetica">
-            Born and raised on the central coast, I, <b>Adam Henry Bucholtz</b>, am currently a student attending California 
-            Polytechnic University Pomona pursuing a Bachelors of Architecture. I look forward to working on design that 
-            emphasizes the needs of the public and the communities he serves as well as 
+            Born and raised on the central coast, I, <b>Adam Bucholtz</b>, am currently a student attending California
+            Polytechnic University Pomona pursuing a Bachelors of Architecture. I look forward to working on design that
+            emphasizes the needs of the public and the communities he serves as well as
             unconventional applications of architecture.
             <br />
             <br />
-            Through my studies, I have also developed an 
-            affinity for materiality, texture, detail, and construction. 
-            In my personal life, I enjoys spending time with my family of 6, running a 5k, 
-            and pursuing fluency in Spanish. 
+            Through my studies, I have also developed an
+            affinity for materiality, texture, detail, and construction.
+            In my personal life, I enjoy spending time with my family of 6, running a 5k,
+            and pursuing fluency in Spanish.
           </h1>
           {/* Software Proficiency */}
           <div className="mt-8">
@@ -80,7 +80,7 @@ export const About = () => {
             </ul>
           </div>
         </div>
-        
+
       </div>
     </div>
   )

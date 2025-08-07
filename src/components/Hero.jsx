@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import 'flowbite'
 
 const imagePaths = [
@@ -8,39 +8,40 @@ const imagePaths = [
     '/photos/SPRING SECOND YEAR - Shift/Shift-Render-1.png',
   ],
   [
-    '/photos/SPRING SECOND YEAR - Shift/Shift-Model-1.png',
+    '/photos/SPRING SECOND YEAR - Shift/Shift-Render-2.png', // Needs Aproval
     '/photos/FALL SECOND YEAR/Leimert-1.png',
     '/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-1.jpeg',
   ],
   [
-    '/photos/THIRD YEAR SPRING - Oasis/Oasis-5.jpg',
+    '/photos/THIRD YEAR SPRING - Oasis/Oasis-5.jpg', // maybe
     '/photos/FALL SECOND YEAR/Leimert-2.png',
     '/photos/SPRING SECOND YEAR - Shift/Shift-1.png',
   ],
   [
     '/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Model-1.png',
-    '/photos/FALL SECOND YEAR/Leimert-3.png',
-    '/photos/FALL SECOND YEAR/Leimert-4.png',
+    '/photos/FALL SECOND YEAR/Leimert-3.png', //no 
+    '/photos/FALL SECOND YEAR/Leimert-4.png', //no 
   ],
 ];
 
 const imageClass =
-  'h-full max-w-full rounded-lg opacity-30 hover:opacity-100 hover:scale-110 hover:shadow-xl transition-all duration-500 ease-in-out';
+  'h-full max-w-full rounded-lg opacity-50 hover:opacity-100 hover:scale-110 hover:shadow-xl transition-all duration-500 ease-in-out';
 
 export const Hero = () => {
-  
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openImage = (src) => {
+    setSelectedImage(src);
+  };
+
+  const closeImage = () => {
+    setSelectedImage(null);
+  };
 
   return (
-    <div id="home" className="bg-primary-theme h-dvh w-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute text-center z-10 max-w-xl p-10">
-          <h2 className="font-tinos text-[#333336dd] pb-5 text-lg">Welcome to</h2>
-          <h1 className="font-quint text-[#080808] text-6xl lg:text-8xl underline">
-            Adam's Portfolio
-          </h1>
-          <p className="font-tinos pt-10 pb-10 mt-4 text-lg text-[#333336dd] max-w-md">
-            Discover my work, interesting projects, and progression over the years.
-          </p>
-      </div>
+    <div id="home" className="bg-[#cecbc4] h-dvh w-screen flex items-center justify-center relative overflow-hidden">
+      <img className="absolute z-10 h-[600px] w-[600px] -left-4 -bottom-32" src="/photos/LOGO.png" alt="" />
+      <h1 className="absolute z-10 left-1/3 bottom-40 text-3xl font-helvetica">Selected works over the years.</h1>
 
       {/* Gallery */}
       <div className="flex w-full h-full object-contain items-center justify-between">
@@ -49,13 +50,39 @@ export const Hero = () => {
             <div key={colIndex} className="grid gap-4">
               {column.map((src, imgIndex) => (
                 <div key={imgIndex}>
-                  <img src={src} alt="" className={imageClass} />
+                  <img
+                    src={src}
+                    alt=""
+                    className={imageClass + ' cursor-pointer'}
+                    onClick={() => openImage(src)}
+                  />
                 </div>
               ))}
             </div>
           ))}
         </div>
       </div>
+
+      {/* Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50"
+          onClick={closeImage}
+        >
+          <img
+            src={selectedImage}
+            alt="Zoomed"
+            className="max-w-[90%] max-h-[90%] rounded-lg shadow-2xl transition-transform duration-300 transform scale-100"
+            onClick={(e) => e.stopPropagation()}
+          />
+          <button
+            className="absolute top-5 right-5 text-white text-3xl font-bold"
+            onClick={closeImage}
+          >
+            &times;
+          </button>
+        </div>
+      )}
     </div>
-  )
-}
+  );
+};

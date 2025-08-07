@@ -1,22 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const projectData = [
   {
-    title: "Fan - Subtract - Bridge",
+    title: "The Observatory",
     description:
       "The design and concept of this work was ...",
     image: "/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-1.jpeg",
     link: "#Project_fan_bridge",
   },
   {
-    title: "The Oasis",
+    title: "Oasis",
     description:
       "When you think about the Oasis, it evokes strong feelings of...",
     image: "/photos/THIRD YEAR SPRING - Oasis/Oasis-1.jpg",
     link: "#Project_oasis",
   },
   {
-    title: "The Shift",
+    title: "Shift",
     description:
       "Basis of the design was formulated in exercise one through photographing a tree resembling that of a...",
     image: "/photos/SPRING SECOND YEAR - Shift/Shift-1.png",
@@ -30,7 +30,7 @@ const projectData = [
     link: "#Project_leimert",
   },
   {
-    title: "The Network - Group Work",
+    title: "Network - Group Work",
     description:
       "The Network addresses the desired agency sought after by the target demographic of temporary occupants...",
     image: "/photos/CONSTRUCTION SET - Network/Network-1.png",
