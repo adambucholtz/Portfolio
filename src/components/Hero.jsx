@@ -40,8 +40,8 @@ export const Hero = () => {
 
   return (
     <div id="home" className="bg-[#cecbc4] h-dvh w-screen flex items-center justify-center relative overflow-hidden">
-      <img className="absolute z-10 h-[600px] w-[600px] -left-4 -bottom-32" src="/photos/LOGO.png" alt="" />
-      <h1 className="absolute z-10 left-1/3 bottom-40 text-3xl font-helvetica">Selected works over the years.</h1>
+      <img className="absolute z-10 h-[700px] w-[700px] -left-28 -bottom-36" src="/photos/LOGO.png" alt="" />
+      <h1 className="absolute z-10 left-1/3 bottom-40 text-3xl font-quint capitalize">Selected works over the years.</h1>
 
       {/* Gallery */}
       <div className="flex w-full h-full object-contain items-center justify-between">
