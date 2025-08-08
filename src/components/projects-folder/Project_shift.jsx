@@ -70,11 +70,16 @@ export const Project_shift = () => {
         <div className="space-y-16">
           {/* Section 1 */}
           <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
-            <img src="/photos/SPRING SECOND YEAR - Shift/Shift-3.png"
-              className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain"
+            <div className="lg:w-1/2 w-full">
+              <img src="/photos/SPRING SECOND YEAR - Shift/Shift-3.png"
+              className="rounded-xl shadow-lg object-contain cursor-pointer"
               alt=""
               onClick={() => openImage(`/photos/SPRING SECOND YEAR - Shift/Shift-3.png`)}
             />
+              <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
+            </div>
+
+            
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
               <p className="text-lg font-helvetica leading-8 whitespace-pre-line text-justify indent-6 tracking-wide">
                 The project proposal design aims to satisfy environmental
@@ -111,11 +116,16 @@ export const Project_shift = () => {
                 encapsulating the theme of this project, the shift.
               </p>
             </div>
-            <img src="/photos/SPRING SECOND YEAR - Shift/Shift-8.png"
-              className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain"
+            <div className="lg:w-1/2 w-full">
+              <img src="/photos/SPRING SECOND YEAR - Shift/Shift-8.png"
+              className="rounded-xl shadow-lg object-contain cursor-pointer"
               alt=""
               onClick={() => openImage(`/photos/SPRING SECOND YEAR - Shift/Shift-8.png`)}
             />
+              <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
+            </div>
+
+            
           </div>
         </div>
       </div>

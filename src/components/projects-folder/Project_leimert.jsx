@@ -74,20 +74,28 @@ export const Project_leimert = () => {
                 line with its circulation.
               </p>
             </div>
-            <img src="/photos/FALL SECOND YEAR/Leimert-2nd-3rd-Plan.png"
-              className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain"
-              alt=""
-              onClick={() => openImage(`/photos/FALL SECOND YEAR/Leimert-2nd-3rd-Plan.png`)}
-            />
+
+            <div className="lg:w-1/2 w-full">
+              <img src="/photos/FALL SECOND YEAR/Leimert-2nd-3rd-Plan.png"
+                className="rounded-xl shadow-lg object-contain cursor-pointer"
+                alt=""
+                onClick={() => openImage(`/photos/FALL SECOND YEAR/Leimert-2nd-3rd-Plan.png`)}
+              />
+              <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
+            </div>
           </div>
 
           {/* Section 2 */}
           <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
-            <img src="/photos/FALL SECOND YEAR/Leimert-Sub-Ground-Plan.png"
-              className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain"
-              alt=""
-              onClick={() => openImage(`/photos/FALL SECOND YEAR/Leimert-Sub-Ground-Plan.png`)}
-            />
+            <div className="lg:w-1/2 w-full">
+              <img src="/photos/FALL SECOND YEAR/Leimert-Sub-Ground-Plan.png"
+                className="rounded-xl shadow-lg object-contain cursor-pointer"
+                alt=""
+                onClick={() => openImage(`/photos/FALL SECOND YEAR/Leimert-Sub-Ground-Plan.png`)}
+              />
+              <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
+            </div>
+
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
               <p>On the first floor users can enter through two main entrances. One accesses
                 the cafe and the other to an information desk that peers into the auditorium be
@@ -116,11 +124,15 @@ export const Project_leimert = () => {
                 tinuing a connection between exterior and interior.
               </p>
             </div>
-            <img src="/photos/FALL SECOND YEAR/Leimert-Cross-Section-B-C.png"
-              className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain"
-              alt=""
-              onClick={() => openImage(`/photos/FALL SECOND YEAR/Leimert-Cross-Section-B-C.png`)}
-            />
+            <div className="lg:w-1/2 w-full">
+              <img src="/photos/FALL SECOND YEAR/Leimert-Cross-Section-B-C.png"
+                className="rounded-xl shadow-lg object-contain cursor-pointer"
+                alt=""
+                onClick={() => openImage(`/photos/FALL SECOND YEAR/Leimert-Cross-Section-B-C.png`)}
+              />
+              <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
+            </div>
+
           </div>
         </div>
       </div>

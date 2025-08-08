@@ -25,7 +25,7 @@ const imagePaths = [
 ];
 
 const imageClass =
-  'h-full max-w-full rounded-lg opacity-50 hover:opacity-100 hover:scale-110 hover:shadow-xl transition-all duration-500 ease-in-out';
+  'h-full max-w-full rounded-lg opacity-70 hover:opacity-100 hover:scale-110 hover:shadow-xl transition-all duration-500 ease-in-out';
 
 export const Hero = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -41,7 +41,7 @@ export const Hero = () => {
   return (
     <div id="home" className="bg-[#cecbc4] h-dvh w-screen flex items-center justify-center relative overflow-hidden">
       <img className="absolute z-10 h-[700px] w-[700px] -left-28 -bottom-36" src="/photos/LOGO.png" alt="" />
-      <h1 className="absolute z-10 left-1/3 bottom-40 text-3xl font-quint capitalize">Selected works over the years.</h1>
+      <h1 className="absolute z-10 left-1/3 bottom-40 text-3xl capitalize">Selected works over the years.</h1>
 
       {/* Gallery */}
       <div className="flex w-full h-full object-contain items-center justify-between">

@@ -86,20 +86,27 @@ export const Project_network = () => {
                 the central circulation path is open to all on the site.
               </p>
             </div>
-            <img src="/photos/CONSTRUCTION SET - Network/Network-4.png"
-              className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain"
-              alt=""
-              onClick={() => openImage(`/photos/CONSTRUCTION SET - Network/Network-4.png`)}
-            />
+            <div className="lg:w-1/2 w-full">
+              <img src="/photos/CONSTRUCTION SET - Network/Network-5.png"
+                className="rounded-xl shadow-lg object-contain cursor-pointer"
+                alt=""
+                onClick={() => openImage(`/photos/CONSTRUCTION SET - Network/Network-5.png`)}
+              />
+              <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
+            </div>
+
           </div>
 
           {/* Section 2 */}
           <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
-            <img src="/photos/CONSTRUCTION SET - Network/Network-5.png"
-              className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain"
-              alt=""
-              onClick={() => openImage(`/photos/CONSTRUCTION SET - Network/Network-5.png`)}
-            />
+            <div className="lg:w-1/2 w-full">
+              <img src="/photos/CONSTRUCTION SET - Network/Network-5.png"
+                className="rounded-xl shadow-lg object-contain cursor-pointer"
+                alt=""
+                onClick={() => openImage(`/photos/CONSTRUCTION SET - Network/Network-5.png`)}
+              />
+              <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
+            </div>
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
               <p>
                 Adjacent to the live
@@ -135,11 +142,14 @@ export const Project_network = () => {
                 larger party events
               </p>
             </div>
-            <img src="/photos/CONSTRUCTION SET - Network/Network-6.png"
-              className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain"
-              alt=""
-              onClick={() => openImage(`/photos/CONSTRUCTION SET - Network/Network-6.png`)}
-            />
+            <div className="lg:w-1/2 w-full">
+              <img src="/photos/CONSTRUCTION SET - Network/Network-6.png"
+                className="rounded-xl shadow-lg object-contain cursor-pointer"
+                alt=""
+                onClick={() => openImage(`/photos/CONSTRUCTION SET - Network/Network-6.png`)}
+              />
+              <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
+            </div>
           </div>
         </div>
       </div>

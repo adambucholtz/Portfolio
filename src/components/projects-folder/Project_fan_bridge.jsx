@@ -9,7 +9,7 @@ const fanBridgeGallery = [
 
 
 export const Project_fan_bridge = () => {
-  {/** Expand Image  */}
+  {/** Expand Image  */ }
   const [selectedImage, setSelectedImage] = useState(null);
 
   const openImage = (src) => {
@@ -73,19 +73,28 @@ export const Project_fan_bridge = () => {
               <p>The building is designed to a <strong>Code Height</strong> of <strong>60'-0"</strong> and <strong>4 stories</strong>, constructed using <strong>Type IVA</strong> fire-resistive construction.</p>
               <p>Sprinklered according to <strong>NFPA-13 (903.3.1.1)</strong> for increased safety and allowable limits.</p>
             </div>
-            <img
-              src="/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-2nd-Floor-Plan.png"
-              className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain"
-              alt=""
-              onClick={() => openImage("/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-2nd-Floor-Plan.png")} />
+
+            <div className="lg:w-1/2 w-full">
+              <img
+                src="/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-2nd-Floor-Plan.png"
+                className="rounded-xl shadow-lg object-contain cursor-pointer"
+                alt=""
+                onClick={() => openImage("/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-2nd-Floor-Plan.png")}
+              />
+              <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
+            </div>
           </div>
 
           {/* Section 2 */}
           <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
-            <img src="/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Section-EW-NS.png"
-              className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain"
-              alt=""
-              onClick={() => openImage("/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Section-EW-NS.png")} />
+            <div className="lg:w-1/2 w-full">
+              <img src="/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Section-EW-NS.png"
+                className="rounded-xl shadow-lg object-contain cursor-pointer"
+                alt=""
+                onClick={() => openImage("/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Section-EW-NS.png")} />
+              <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
+            </div>
+
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
               <h3 className="text-2xl font-semibold">Material & Exterior Systems</h3>
               <p>Exterior walls are constructed from <strong>noncombustible or ignition-resistant materials</strong> such as <em>Shou Sugi Ban</em> siding and stone paneling.</p>
@@ -102,19 +111,27 @@ export const Project_fan_bridge = () => {
               <p>Exit separation exceeds the 1/3 diagonal requirement, with <strong>100'</strong> provided against the <strong>30'</strong> minimum required.</p>
               <p>Handrails maintain <strong>1½" clearance</strong> from adjacent surfaces and are free from sharp elements as per CBC 1014.7.</p>
             </div>
-            <img src="/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-3rd-Floor-Plan.png"
-              className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain"
-              alt=""
-              onClick={() => openImage("/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-3rd-Floor-Plan.png")} />
+
+            <div className="lg:w-1/2 w-full">
+              <img src="/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-3rd-Floor-Plan.png"
+                className="rounded-xl shadow-lg object-contain cursor-pointer"
+                alt=""
+                onClick={() => openImage("/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-3rd-Floor-Plan.png")} />
+              <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
+            </div>
           </div>
 
           {/* Section 4 */}
           <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
-            <img src="/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Section-EW-NS.png"
-              className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain"
-              alt="Click Image to Expand"
-              onClick={() => openImage("/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Section-EW-NS.png")} 
+            <div className="lg:w-1/2 w-full">
+              <img src="/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Section-EW-NS.png"
+                className="rounded-xl shadow-lg object-contain cursor-pointer"
+                alt="Click Image to Expand"
+                onClick={() => openImage("/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Section-EW-NS.png")}
               />
+              <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
+            </div>
+
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
               <h3 className="text-2xl font-semibold">Assembly & Details</h3>
               <p>Stone Paneling assembly includes <strong>8" batt insulation</strong>, <strong>3" rigid insulation</strong>, air space, clips, and variable-sized stone panels over gypsum and AVB barriers.</p>

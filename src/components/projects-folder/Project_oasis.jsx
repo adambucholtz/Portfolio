@@ -70,11 +70,15 @@ export const Project_oasis = () => {
         <div className="space-y-16">
           {/* Section 1 */}
           <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
-            <img src="/photos/THIRD YEAR SPRING - Oasis/Oasis-3.jpg"
-              className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain"
+            <div className="lg:w-1/2 w-full">
+              <img src="/photos/THIRD YEAR SPRING - Oasis/Oasis-3.jpg"
+              className="rounded-xl shadow-lg object-contain cursor-pointer"
               alt=""
               onClick={() => openImage(`/photos/THIRD YEAR SPRING - Oasis/Oasis-3.jpg`)}
             />
+              <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
+            </div>
+            
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
               <p className="text-lg font-helvetica leading-8 whitespace-pre-line text-justify indent-6 tracking-wide">
                 When you think of an <strong>oasis</strong>, it evokes strong feelings of ease, desire, and having your needs met. Not only does the
@@ -101,10 +105,14 @@ export const Project_oasis = () => {
                 warmer feeling. The yellow tower is rotated for an ideal sun angle.
               </p>
             </div>
-            <img src="/photos/THIRD YEAR SPRING - Oasis/Oasis-7.jpg"
-              className="lg:w-1/2 w-full rounded-xl shadow-lg object-contain"
+            <div className="lg:w-1/2 w-full">
+              <img src="/photos/THIRD YEAR SPRING - Oasis/Oasis-7.jpg"
+              className="rounded-xl shadow-lg object-contain cursor-pointer"
               alt=""
               onClick={() => openImage(`/photos/THIRD YEAR SPRING - Oasis/Oasis-7.jpg`)} />
+              <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
+            </div>
+
           </div>
         </div>
 
