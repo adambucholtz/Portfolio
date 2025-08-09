@@ -10,8 +10,10 @@ export const About = () => {
       {/**Content */}
       <div class="flex-center flex-col lg:flex-row items-center justify-center gap-12 max-w-7xl mx-auto">
         {/**Left side */}
-        <div>
+        <div className="relative">
+          <img src="/photos/Ponoma-Logo.png" alt="" className="absolute -bottom-5 -left-5 w-[30%] h[30%]"></img>
           <img src="/photos/adam-portrait.jpg" alt="..." class="w-[480px] h-[640px] object-cover rounded-md shadow-lg"></img>
+          
         </div>
         {/**Right Side */}
         <div class="w-full max-w-md text-lg leading-relaxed text-gray-700">

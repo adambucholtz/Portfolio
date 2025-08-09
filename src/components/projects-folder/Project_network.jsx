@@ -131,7 +131,7 @@ export const Project_network = () => {
                 anticipated for small gatherings or individual activity that requires a slightly
                 larger space. The ground floor provides the largest outdoor spaces,
                 allocated for large outdoor gatherings like barbecues, park games, and
-                larger party events
+                larger party events.
               </p>
             </div>
             <div className="lg:w-1/2 w-full">

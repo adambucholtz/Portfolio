@@ -95,7 +95,7 @@ export const Project_shift = () => {
               <p className="project-paragraph">
                 This shifted pattern that emerged could offer an captivating
                 effect while achieving a beneficial environmental impact. By utilizing 
-                the shifts in the design, overhangs form that protect lower floors
+                the <strong>shifts</strong> in the design, overhangs form that protect lower floors
                 from the harsh sun during the summer months yet with it tucked in
                 glass facade, the winter months can recieve adequate daylighting.
               </p>
