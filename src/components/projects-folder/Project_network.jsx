@@ -6,7 +6,19 @@ const networkGallery = [
   "Network3.png",
   "Network4.png",
   "Network5.png",
-  "Network6.png",
+  "Network7.png",
+  "Network8.png",
+  "Network9.png",
+  "Network11.png",
+  "Network12.png",
+  "Network13.png",
+  "Network14.png",
+  "Network14.png",
+  "Network15.png",
+  "Network16.png",
+  "Network17.png",
+  "Network18.png",
+  "Network19.png",
 ];
 
 export const Project_network = () => {
