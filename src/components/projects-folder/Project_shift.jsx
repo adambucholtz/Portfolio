@@ -40,10 +40,10 @@ export const Project_shift = () => {
                 data-carousel-item
               >
                 <img
-                  src={`${prefix}/photos/SPRING SECOND YEAR - Shift/${img}`}
+                  src={`${prefix}photos/SPRING SECOND YEAR - Shift/${img}`}
                   className="w-full h-full object-contain"
                   alt=""
-                  onClick={() => openImage(`${prefix}/photos/CONSTRUCTION SET - Network/${img}`)}
+                  onClick={() => openImage(`${prefix}photos/CONSTRUCTION SET - Network/${img}`)}
                 />
               </div>
             ))}

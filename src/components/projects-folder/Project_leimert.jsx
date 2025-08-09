@@ -37,10 +37,10 @@ export const Project_leimert = () => {
                 data-carousel-item
               >
                 <img
-                  src={`${prefix}/photos/FALL SECOND YEAR/${img}`}
+                  src={`${prefix}photos/FALL SECOND YEAR/${img}`}
                   className="w-full h-full object-contain"
                   alt=""
-                  onClick={() => openImage(`${prefix}/photos/FALL SECOND YEAR/${img}`)}
+                  onClick={() => openImage(`${prefix}photos/FALL SECOND YEAR/${img}`)}
                 />
               </div>
             ))}

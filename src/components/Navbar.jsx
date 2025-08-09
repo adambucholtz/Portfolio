@@ -1,5 +1,7 @@
 import React from 'react';
 
+const prefix = import.meta.env.BASE_URL;
+
 export const Navbar = () => {
   return (
     <div className="fixed inset-x-0 top-4 z-50 h-10 border-b-4 border-black transition-all duration-700 sm:inset-x-6 bg-primary-theme bg-opacity-80 rounded-md">
@@ -8,7 +10,7 @@ export const Navbar = () => {
           {/* Left: Logo */}
           <div className="flex items-center">
             <a href="#home">
-              <img src="/photos/LOGO.png" alt="Logo" className="h-10 w-auto" />
+              <img src={`${prefix}/photos/LOGO.png`} alt="Logo" className="h-10 w-auto" />
             </a>
           </div>
 
