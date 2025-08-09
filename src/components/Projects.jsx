@@ -9,11 +9,11 @@ const projectData = [
     link: "#Project_fan_bridge",
   },
   {
-    title: "Oasis",
+    title: "Network - Group Work",
     description:
-      "When you think about the Oasis, it evokes strong feelings of...",
-    image: "/photos/THIRD YEAR SPRING - Oasis/Oasis-1.jpg",
-    link: "#Project_oasis",
+      "The Network addresses the desired agency sought after by the target demographic of temporary occupants...",
+    image: "/photos/CONSTRUCTION SET - Network/Network1.png",
+    link: "#Project_network",
   },
   {
     title: "Shift",
@@ -30,18 +30,18 @@ const projectData = [
     link: "#Project_leimert",
   },
   {
-    title: "Network - Group Work",
+    title: "Oasis",
     description:
-      "The Network addresses the desired agency sought after by the target demographic of temporary occupants...",
-    image: "/photos/CONSTRUCTION SET - Network/Network2.png",
-    link: "#Project_network",
+      "When you think about the Oasis, it evokes strong feelings of...",
+    image: "/photos/THIRD YEAR SPRING - Oasis/Oasis-1.jpg",
+    link: "#Project_oasis",
   },
 ];
 
 export const Projects = () => {
   return (
     <div id="works" className="relative min-h-screen w-screen bg-primary-theme px-4 py-16">
-      <h2 className="font-serif text-text-primary text-center text-6xl lg:text-8xl">Selected Works</h2>
+      
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-10">
         {projectData.map((project, index) => (
           <div

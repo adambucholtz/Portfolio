@@ -2,13 +2,11 @@ import React, { useState } from 'react'
 
 const shiftGallery = [
   "Shift-1.png",
-  "Shift-2.png",
   "Shift-3.png",
   "Shift-4.png",
   "Shift-5.png",
   "Shift-6.png",
   "Shift-7.png",
-  "Shift-Model-1.png",
   "Shift-Render-1.png",
 ];
 
@@ -27,8 +25,8 @@ export const Project_shift = () => {
   return (
     <div id="Project_shift" className="w-screen bg-[#fffefb] text-[#1e1e1e] py-16 px-4 md:px-10 lg:px-16 space-y-10">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-5xl font-bold text-justify">Shift</h2>
-        <h2>Education, Institutional</h2>
+        <h2 className="font-serif text-5xl font-bold text-justify">Shift</h2>
+        <h2 className="font-sans">Education, Institutional</h2>
 
         {/* Image Carousel */}
         <div id="controls-carousel" className="relative items-center justify-center w-full mt-4 mb-20" data-carousel="static">
@@ -81,18 +79,12 @@ export const Project_shift = () => {
 
             
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
-              <p className="text-lg font-helvetica leading-8 whitespace-pre-line text-justify indent-6 tracking-wide">
+              <p className="project-paragraph">
                 The project proposal design aims to satisfy environmental
                 needs while facilitating a comfortable space for those inhabiting it,
                 ideally the students, teachers, and staff. Basis of the design was for
                 mulated in exercise one through photographing a tree resembling
-                that of a canopy. Thoughts of how these areas are protected by the
-                environment from the light and also through gaps in leaves still al
-                lows light to come in resemble some of the goals of this proposal. By
-                developing a field condition of the photography I was able to study
-                the elements of the image that could be extrapolated into the design
-                itself. Overlapping modules sparked the idea to alternate different
-                “modular” floors throughout the design.
+                that of a canopy.
               </p>
             </div>
           </div>
@@ -100,20 +92,12 @@ export const Project_shift = () => {
           {/* Section 2 */}
           <div className="flex flex-col lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
-              <p className="text-lg font-helvetica leading-8 whitespace-pre-line mb-16 text-justify indent-6 tracking-wide">
+              <p className="project-paragraph">
                 This shifted pattern that emerged could offer an captivating
-                effect while achieving a beneficial environmental impact. By utiliz
-                ing the shifts in the design, overhangs form that protect lower floors
+                effect while achieving a beneficial environmental impact. By utilizing 
+                the shifts in the design, overhangs form that protect lower floors
                 from the harsh sun during the summer months yet with it tucked in
                 glass facade, the winter months can recieve adequate daylighting.
-                Each module presents its own unique form to the building but co
-                hesively coming together in a logical and a double heighted for the
-                lobby, gallery, and lecture halls. The sun condition is one of the most
-                crucial parts of this design. It was carefully studied the times of year
-                that would affect the building and designed for the worst case scenar
-                io. In doing this action the design is well fit for the Pomona climate,
-                the hot sun in the summer and the colder days in the winter, perfectly
-                encapsulating the theme of this project, the shift.
               </p>
             </div>
             <div className="lg:w-1/2 w-full">

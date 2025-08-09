@@ -21,7 +21,7 @@ export const Project_fan_bridge = () => {
   };
 
   return (
-    <div id="Project_fan_bridge" className="w-screen bg-[#fdfaf5] text-[#1e1e1e] py-16 px-4 md:px-10 lg:px-16 space-y-10">
+    <div id="Project_fan_bridge" className="w-screen bg-[#fffefb] text-[#1e1e1e] py-16 px-4 md:px-10 lg:px-16 space-y-10">
       <div className="max-w-6xl mx-auto">
         <h2 className="font-serif text-5xl font-bold text-justify">The Observatory</h2>
         <h2 className="font-sans">Mix, Public, Residential</h2>
@@ -69,9 +69,9 @@ export const Project_fan_bridge = () => {
           <div className="flex flex-col lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
               <h3 className="text-2xl font-semibold">Occupancy & Height</h3>
-              <p>Levels 1 & 2 are classified as <strong>Business (B)</strong>, and Level 3 is classified as <strong>Residential (R-2)</strong>.</p>
-              <p>The building is designed to a <strong>Code Height</strong> of <strong>60'-0"</strong> and <strong>4 stories</strong>, constructed using <strong>Type IVA</strong> fire-resistive construction.</p>
-              <p>Sprinklered according to <strong>NFPA-13 (903.3.1.1)</strong> for increased safety and allowable limits.</p>
+              <p className="">Levels 1 & 2 are classified as <strong>Business (B)</strong>, and Level 3 is classified as <strong>Residential (R-2)</strong>.</p>
+              <p className="">The building is designed to a <strong>Code Height</strong> of <strong>60'-0"</strong> and <strong>4 stories</strong>, constructed using <strong>Type IVA</strong> fire-resistive construction.</p>
+              <p className="">Sprinklered according to <strong>NFPA-13 (903.3.1.1)</strong> for increased safety and allowable limits.</p>
             </div>
 
             <div className="lg:w-1/2 w-full">

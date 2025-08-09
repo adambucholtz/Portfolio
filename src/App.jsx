@@ -18,10 +18,10 @@ function App() {
       <About />
       <Projects />
       <Project_fan_bridge />
-      <Project_oasis />
-      <Project_leimert />
-      <Project_shift />
       <Project_network />
+      <Project_shift />
+      <Project_leimert />
+      <Project_oasis />
       <Contact />
     </main>
   )

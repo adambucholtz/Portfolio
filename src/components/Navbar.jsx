@@ -40,13 +40,8 @@ export const Navbar = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="#Project_oasis" className="block px-6 py-3 transition-all duration-300 hover:bg-[#f6f6f6] hover:pl-8 hover:shadow-inner">
-                        Oasis
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#Project_leimert" className="block px-6 py-3 transition-all duration-300 hover:bg-[#f6f6f6] hover:pl-8 hover:shadow-inner">
-                        Leimert Park Arts Center
+                      <a href="#Project_network" className="block px-6 py-3 transition-all duration-300 hover:bg-[#f6f6f6] hover:pl-8 hover:shadow-inner">
+                        Network - Group Work
                       </a>
                     </li>
                     <li>
@@ -55,8 +50,13 @@ export const Navbar = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="#Project_network" className="block px-6 py-3 transition-all duration-300 hover:bg-[#f6f6f6] hover:pl-8 hover:shadow-inner">
-                        Network - Group Work
+                      <a href="#Project_leimert" className="block px-6 py-3 transition-all duration-300 hover:bg-[#f6f6f6] hover:pl-8 hover:shadow-inner">
+                        Leimert Park Arts Center
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Project_oasis" className="block px-6 py-3 transition-all duration-300 hover:bg-[#f6f6f6] hover:pl-8 hover:shadow-inner">
+                        Oasis
                       </a>
                     </li>
                   </ul>

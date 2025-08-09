@@ -24,8 +24,8 @@ export const Project_network = () => {
   return (
     <div id="Project_network" className="w-screen bg-[#fdfaf5] text-[#1e1e1e] py-16 px-4 md:px-10 lg:px-16 space-y-10">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-5xl font-bold text-justify">Network - Group Work</h2>
-        <h2>Design Development, Constuction Set, Revit</h2>
+        <h2 className="font-serif text-5xl font-bold text-justify">Network - Group Work</h2>
+        <h2 className="font-sans">Design Development, Constuction Set, Revit</h2>
 
         {/* Image Carousel */}
         <div id="controls-carousel" className="relative items-center justify-center w-full mt-4 mb-20" data-carousel="static">
@@ -69,21 +69,12 @@ export const Project_network = () => {
           {/* Section 1 */}
           <div className="flex flex-col lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
-              <p>
-                The Network addresses the desired agency sought after by the target
+              <p className="project-paragraph">
+                The <strong>Network</strong> addresses the desired agency sought after by the target
                 demographic of temporary occupants, generally ranging from the ages of
                 twenty to mid-thirties, by providing an individualized experience for each
                 resident, prioritizing a theatrical circulation path that relieves into individual
-                paths for each resident. The three towers of the Network each serve a
-                different sub genre within the overall target demographic, consisting of four
-                unit types, with each type having three different configurations, resulting in a
-                total of twelve unique unit plans. The live-work units are located in the
-                largest tower, along the edge of the street across from the transit center.
-                This orientation best allows for visitors of the live-work units, who may not
-                be living in the units but have business to attend to with the renters, a
-                separately desired circulation path, being the egress stairs that are tucked in
-                between the live-work units. This however, is not a limitation, as if desired,
-                the central circulation path is open to all on the site.
+                paths for each resident.
               </p>
             </div>
             <div className="lg:w-1/2 w-full">
@@ -108,17 +99,11 @@ export const Project_network = () => {
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
-              <p>
+              <p className="project-paragraph">
                 Adjacent to the live
                 work units, the two-bedroom units share the parti wall. The two-bedroom
-                units have three configurations for three different residential preferences; an
-                internalized balcony within the middle of the unit, which is easily accessible
-                and acts as a common room of sorts, an external balcony at the corner of
-                the non-parti wall, which has semi-private balcony access, as it is tucked at
-                the end of the hall, and lastly the external balcony attached to the two
-                bedrooms, providing the most privacy of the three balconies. This logic is
-                repeated within the one-bedroom and studio units as well, with the plans
-                varying every three floors. No two balconies face on another, in order to
+                units have three configurations for three different residential preferences. 
+                No two balconies face on another, in order to
                 convey a feeling of ownership over ones space.
               </p>
             </div>
@@ -127,14 +112,9 @@ export const Project_network = () => {
           {/* Section 3 */}
           <div className="flex flex-col lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
-              <p>
+              <p className="project-paragraph">
                 The less subtle attraction of the Network is the “network” itself, the series of
-                walkways that sit within the empty space of the three towers.  The series of
-                six walkways features three stair variations which all discharge to a
-                communal outdoor balcony space. Where these spaces are located
-                determines the orientation of the balconies within the buildings, and whether
-                they face away from the parcel or to the neighboring parcels, providing
-                privacy in small outdoor spaces “owned” by the occupants. The upper level
+                walkways that sit within the empty space of the three towers. The upper level
                 outdoor spaces created by the balconies are medium sized spaces,
                 anticipated for small gatherings or individual activity that requires a slightly
                 larger space. The ground floor provides the largest outdoor spaces,

@@ -80,14 +80,9 @@ export const Project_oasis = () => {
             </div>
             
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
-              <p className="text-lg font-helvetica leading-8 whitespace-pre-line text-justify indent-6 tracking-wide">
+              <p className="project-paragraph">
                 When you think of an <strong>oasis</strong>, it evokes strong feelings of ease, desire, and having your needs met. Not only does the
-                project focus on accommodating the needs of one specific demographic but a collective of a diverse demographic, first
-                time dwelling owners in the rise of increasing housing instability. The project aims to satisfy the varying needs for all
-                of these users in what many consider a very prescriptive area of architecture, housing. One of the common themes that
-                drove the project forward was individuality and uniqueness. These themes, supported by giving users agency, helped
-                inform the decisions that developed the project. It became a conversation about how it is possible to maximize the
-                differences within the project, while still maintaining a collective look.
+                project focus on accommodating the needs of one specific demographic, but a collective of a diverse demographic.
               </p>
             </div>
           </div>
@@ -95,14 +90,9 @@ export const Project_oasis = () => {
           {/* Section 2 */}
           <div className="flex flex-col lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
-              <p className="text-lg font-helvetica leading-8 whitespace-pre-line mb-16 text-justify indent-6 tracking-wide">
+              <p className="project-paragraph">
                 Architecturally, the project was developed from three separate and distinct massings that share a universal ideal. The
-                towers vary in height, size, and lifestyle. The earthy red short yet long tower, adjacent to the train station houses the
-                live work units. The red tower is long yet short, and has a dark red appearance. The orange tower stands as a medium
-                between the three, quite equal in proportion. Finally, the yellow tower is distinctly very tall but very thin. Through this
-                decision, each tower has its own construction type, appeal, and lifestyle but when looking afar at the overall campus, it
-                architecturally adheres to each other, within the desert southwest palette of Santa Ana, its context, and an overall
-                warmer feeling. The yellow tower is rotated for an ideal sun angle.
+                towers vary in height, size, and lifestyle.
               </p>
             </div>
             <div className="lg:w-1/2 w-full">
@@ -118,14 +108,10 @@ export const Project_oasis = () => {
 
 
         <br></br>
-        <p className="text-lg font-helvetica leading-8 whitespace-pre-line mb-16 text-justify indent-6 tracking-wide">
-          The lowest level functions as the service floor as
-          well as a public center. The commercial sector lines the street adjacent to the most public aspect of the site, the train
-          station. The closer one moves towards the back of the parcel, the more private the spaces become, starting with the
-          cafe, then to the gym, and finally resolving to the residential lobby. The orientation of the towers shelter a central space
+        <p className="project-paragraph">
+          The orientation of the towers shelter a central space
           that is peaceful and quaint and steps down from the site continuing to reinforce a sheltered space for the users. This
-          space allows users to navigate to any area on the site, solidifying the project’s emphasis on user choice. The design of
-          the towers is to facilitate unique lifestyles for a variety of individuals that is both comforting and exciting.
+          space allows users to navigate to any area on the site, solidifying the project’s emphasis on user choice.
           <br></br>
           <br></br>
           <div className="text-center bg-white shadow-md rounded-xl p-6 mt-8 w-fit mx-auto border border-gray-200">

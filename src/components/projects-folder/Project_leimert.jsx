@@ -22,8 +22,8 @@ export const Project_leimert = () => {
   return (
     <div id="Project_leimert" className="w-screen bg-[#fdfaf5] text-[#1e1e1e] py-16 px-4 md:px-10 lg:px-16 space-y-10">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-5xl font-bold text-justify">Leimert Park Community Arts Center</h2>
-        <h2>Public, Varying Space, Depth, Intrigue, Garden Space</h2>
+        <h2 className="font-serif text-5xl font-bold text-justify">Leimert Park Community Arts Center</h2>
+        <h2 className="font-sans">Public, Varying Space, Depth, Intrigue, Garden Space</h2>
 
         {/* Image Carousel */}
         <div id="controls-carousel" className="relative items-center justify-center w-full mt-4 mb-20" data-carousel="static">
@@ -67,7 +67,7 @@ export const Project_leimert = () => {
           {/* Section 1 */}
           <div className="flex flex-col lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
-              <p>
+              <p className="project-paragraph">
                 The main idea of this project is exploring the variation of the grid in previous
                 renditions to develop varying spaces, depth, and intrigue. The project utilizes
                 its variety and connects the variations together to form one cohesive through
@@ -97,29 +97,17 @@ export const Project_leimert = () => {
             </div>
 
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
-              <p>On the first floor users can enter through two main entrances. One accesses
-                the cafe and the other to an information desk that peers into the auditorium be
-                low. There is a constant dialogue between outdoor and indoor spaces both with
-                subtracting away from the mass and through glazing. The first floor exemplifies
-                this dialogue. There is circulation between an outdoor patio space and an in
-                door workspace connected through the cafe and second gallery. The sub level
-                slowly drops below the superstructure leading into a spacious lobby. From the
-                lobby leads into the first gallery which showcases the prominent musical im
-                pact of the community. This gallery also is multi-heighted facilitating amble light
-                and symbolically suggesting the scale of impact of the musical achievements
-                of the community. </p>
+              <p className="project-paragraph">There is a constant dialogue between outdoor and indoor spaces both with
+                subtracting away from the mass and through glazing. </p>
             </div>
           </div>
 
           {/* Section 3 */}
           <div className="flex flex-col lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
-              <p>
-                Another focus of the proposal is its connection with gardening. Inspired by
-                the Ron Finley Project there is an exterior space on the upper most corner
-                designed to facilitate a potential rooftop gardening space. Its large square
-                footage provides ample room to educate and cultivate and even section off a
-                space if a greenhouse is desired. Many of the spaces that open the elements
+              <p className="project-paragraph">
+                Another focus of the proposal is its connection with gardening. Many of the spaces 
+                that open the elements
                 can be used to house a variety of plant life bringing the earth within and con
                 tinuing a connection between exterior and interior.
               </p>
