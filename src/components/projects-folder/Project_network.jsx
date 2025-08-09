@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+const prefix = import.meta.env.BASE_URL;
+
 const networkGallery = [
   "Network1.png",
   "Network2.png",
@@ -49,10 +51,10 @@ export const Project_network = () => {
                 data-carousel-item
               >
                 <img
-                  src={`/photos/CONSTRUCTION SET - Network/${img}`}
+                  src={`${prefix}/photos/CONSTRUCTION SET - Network/${img}`}
                   className="w-full h-full object-contain"
                   alt=""
-                  onClick={() => openImage(`/photos/CONSTRUCTION SET - Network/${img}`)}
+                  onClick={() => openImage(`${prefix}/photos/CONSTRUCTION SET - Network/${img}`)}
                 />
               </div>
             ))}
@@ -90,10 +92,10 @@ export const Project_network = () => {
               </p>
             </div>
             <div className="lg:w-1/2 w-full">
-              <img src="/photos/CONSTRUCTION SET - Network/Network7.png"
+              <img src={`${prefix}/photos/CONSTRUCTION SET - Network/Network7.png`}
                 className="rounded-xl shadow-lg object-contain cursor-pointer"
                 alt=""
-                onClick={() => openImage(`/photos/CONSTRUCTION SET - Network/Network7.png`)}
+                onClick={() => openImage(`${prefix}/photos/CONSTRUCTION SET - Network/Network7.png`)}
               />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>
@@ -103,10 +105,10 @@ export const Project_network = () => {
           {/* Section 2 */}
           <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 w-full">
-              <img src="/photos/CONSTRUCTION SET - Network/Network8.png"
+              <img src={`${prefix}/photos/CONSTRUCTION SET - Network/Network8.png`}
                 className="rounded-xl shadow-lg object-contain cursor-pointer"
                 alt=""
-                onClick={() => openImage(`/photos/CONSTRUCTION SET - Network/Network8.png`)}
+                onClick={() => openImage(`${prefix}/photos/CONSTRUCTION SET - Network/Network8.png`)}
               />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>
@@ -135,10 +137,10 @@ export const Project_network = () => {
               </p>
             </div>
             <div className="lg:w-1/2 w-full">
-              <img src="/photos/CONSTRUCTION SET - Network/Network9.png"
+              <img src={`${prefix}/photos/CONSTRUCTION SET - Network/Network9.png`}
                 className="rounded-xl shadow-lg object-contain cursor-pointer"
                 alt=""
-                onClick={() => openImage(`/photos/CONSTRUCTION SET - Network/Network9.png`)}
+                onClick={() => openImage(`${prefix}/photos/CONSTRUCTION SET - Network/Network9.png`)}
               />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>

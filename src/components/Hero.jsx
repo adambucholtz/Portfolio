@@ -42,7 +42,7 @@ export const Hero = () => {
 
   return (
     <div id="home" className="bg-[#cecbc4] h-dvh w-screen flex items-center justify-center relative overflow-hidden">
-      <img className="absolute z-10 h-[700px] w-[700px] -left-28 -bottom-36" src="/photos/LOGO.png" alt="" />
+      <img className="absolute z-10 h-[700px] w-[700px] -left-28 -bottom-36" src={`${prefix}/photos/LOGO.png`} alt="" />
       <h1 className="font-sans absolute z-10 left-1/3 bottom-40 text-3xl">Selected works over the years.</h1>
 
       {/* Gallery */}

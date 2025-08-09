@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+const prefix = import.meta.env.BASE_URL;
+
 const shiftGallery = [
   "Shift-1.png",
   "Shift-3.png",
@@ -38,9 +40,10 @@ export const Project_shift = () => {
                 data-carousel-item
               >
                 <img
-                  src={`/photos/SPRING SECOND YEAR - Shift/${img}`}
+                  src={`${prefix}/photos/SPRING SECOND YEAR - Shift/${img}`}
                   className="w-full h-full object-contain"
                   alt=""
+                  onClick={() => openImage(`${prefix}/photos/CONSTRUCTION SET - Network/${img}`)}
                 />
               </div>
             ))}
@@ -69,10 +72,10 @@ export const Project_shift = () => {
           {/* Section 1 */}
           <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 w-full">
-              <img src="/photos/SPRING SECOND YEAR - Shift/Shift-3.png"
+              <img src={`${prefix}/photos/SPRING SECOND YEAR - Shift/Shift-3.png`}
               className="rounded-xl shadow-lg object-contain cursor-pointer"
               alt=""
-              onClick={() => openImage(`/photos/SPRING SECOND YEAR - Shift/Shift-3.png`)}
+              onClick={() => openImage(`${prefix}/photos/SPRING SECOND YEAR - Shift/Shift-3.png`)}
             />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>
@@ -101,10 +104,10 @@ export const Project_shift = () => {
               </p>
             </div>
             <div className="lg:w-1/2 w-full">
-              <img src="/photos/SPRING SECOND YEAR - Shift/Shift-8.png"
+              <img src={`${prefix}/photos/SPRING SECOND YEAR - Shift/Shift-8.png`}
               className="rounded-xl shadow-lg object-contain cursor-pointer"
               alt=""
-              onClick={() => openImage(`/photos/SPRING SECOND YEAR - Shift/Shift-8.png`)}
+              onClick={() => openImage(`${prefix}/photos/SPRING SECOND YEAR - Shift/Shift-8.png`)}
             />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>

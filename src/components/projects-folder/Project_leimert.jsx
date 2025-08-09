@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+const prefix = import.meta.env.BASE_URL;
+
 const leimertGallery = [
   "Leimert-1.png",
   "Leimert-2.png",
@@ -35,10 +37,10 @@ export const Project_leimert = () => {
                 data-carousel-item
               >
                 <img
-                  src={`/photos/FALL SECOND YEAR/${img}`}
+                  src={`${prefix}/photos/FALL SECOND YEAR/${img}`}
                   className="w-full h-full object-contain"
                   alt=""
-                  onClick={() => openImage(`/photos/FALL SECOND YEAR/${img}`)}
+                  onClick={() => openImage(`${prefix}/photos/FALL SECOND YEAR/${img}`)}
                 />
               </div>
             ))}
@@ -76,10 +78,10 @@ export const Project_leimert = () => {
             </div>
 
             <div className="lg:w-1/2 w-full">
-              <img src="/photos/FALL SECOND YEAR/Leimert-2nd-3rd-Plan.png"
+              <img src={`${prefix}/photos/FALL SECOND YEAR/Leimert-2nd-3rd-Plan.png`}
                 className="rounded-xl shadow-lg object-contain cursor-pointer"
                 alt=""
-                onClick={() => openImage(`/photos/FALL SECOND YEAR/Leimert-2nd-3rd-Plan.png`)}
+                onClick={() => openImage(`${prefix}/photos/FALL SECOND YEAR/Leimert-2nd-3rd-Plan.png`)}
               />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>
@@ -88,10 +90,10 @@ export const Project_leimert = () => {
           {/* Section 2 */}
           <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 w-full">
-              <img src="/photos/FALL SECOND YEAR/Leimert-Sub-Ground-Plan.png"
+              <img src={`${prefix}/photos/FALL SECOND YEAR/Leimert-Sub-Ground-Plan.png`}
                 className="rounded-xl shadow-lg object-contain cursor-pointer"
                 alt=""
-                onClick={() => openImage(`/photos/FALL SECOND YEAR/Leimert-Sub-Ground-Plan.png`)}
+                onClick={() => openImage(`${prefix}/photos/FALL SECOND YEAR/Leimert-Sub-Ground-Plan.png`)}
               />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>
@@ -113,10 +115,10 @@ export const Project_leimert = () => {
               </p>
             </div>
             <div className="lg:w-1/2 w-full">
-              <img src="/photos/FALL SECOND YEAR/Leimert-Cross-Section-B-C.png"
+              <img src={`${prefix}/photos/FALL SECOND YEAR/Leimert-Cross-Section-B-C.png`}
                 className="rounded-xl shadow-lg object-contain cursor-pointer"
                 alt=""
-                onClick={() => openImage(`/photos/FALL SECOND YEAR/Leimert-Cross-Section-B-C.png`)}
+                onClick={() => openImage(`${prefix}/photos/FALL SECOND YEAR/Leimert-Cross-Section-B-C.png`)}
               />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>

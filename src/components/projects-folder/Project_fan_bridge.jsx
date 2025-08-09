@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+const prefix = import.meta.env.BASE_URL;
+
 const fanBridgeGallery = [
   "Fan-Bridge-1.jpeg",
   "Fan-Bridge-2.png",
@@ -36,9 +38,9 @@ export const Project_fan_bridge = () => {
                 data-carousel-item
               >
                 <img
-                  src={`/photos/FALL THIRD YEAR - Fan-Bridge/${img}`}
+                  src={`${prefix}/photos/FALL THIRD YEAR - Fan-Bridge/${img}`}
                   className="w-full h-full object-contain"
-                  onClick={() => openImage(`/photos/FALL THIRD YEAR - Fan-Bridge/${img}`)}
+                  onClick={() => openImage(`${prefix}/photos/FALL THIRD YEAR - Fan-Bridge/${img}`)}
                   alt=""
                 />
               </div>
@@ -76,10 +78,10 @@ export const Project_fan_bridge = () => {
 
             <div className="lg:w-1/2 w-full">
               <img
-                src="/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-2nd-Floor-Plan.png"
+                src={`${prefix}/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-2nd-Floor-Plan.png`}
                 className="rounded-xl shadow-lg object-contain cursor-pointer"
                 alt=""
-                onClick={() => openImage("/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-2nd-Floor-Plan.png")}
+                onClick={() => openImage(`${prefix}/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-2nd-Floor-Plan.png`)}
               />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>
@@ -88,10 +90,10 @@ export const Project_fan_bridge = () => {
           {/* Section 2 */}
           <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 w-full">
-              <img src="/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Section-EW-NS.png"
+              <img src={`${prefix}/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Section-EW-NS.png`}
                 className="rounded-xl shadow-lg object-contain cursor-pointer"
                 alt=""
-                onClick={() => openImage("/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Section-EW-NS.png")} />
+                onClick={() => openImage(`${prefix}/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Section-EW-NS.png`)} />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>
 
@@ -113,10 +115,10 @@ export const Project_fan_bridge = () => {
             </div>
 
             <div className="lg:w-1/2 w-full">
-              <img src="/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-3rd-Floor-Plan.png"
+              <img src={`${prefix}/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-3rd-Floor-Plan.png`}
                 className="rounded-xl shadow-lg object-contain cursor-pointer"
                 alt=""
-                onClick={() => openImage("/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-3rd-Floor-Plan.png")} />
+                onClick={() => openImage(`${prefix}/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-3rd-Floor-Plan.png`)} />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>
           </div>
@@ -124,10 +126,10 @@ export const Project_fan_bridge = () => {
           {/* Section 4 */}
           <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 w-full">
-              <img src="/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Section-EW-NS.png"
+              <img src={`${prefix}/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Section-EW-NS.png`}
                 className="rounded-xl shadow-lg object-contain cursor-pointer"
                 alt="Click Image to Expand"
-                onClick={() => openImage("/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Section-EW-NS.png")}
+                onClick={() => openImage(`${prefix}/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Section-EW-NS.png`)}
               />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>

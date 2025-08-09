@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+const prefix = import.meta.env.BASE_URL;
+
 const oasisGallery = [
   "Oasis-1.jpg",
   "Oasis-11.jpg",
@@ -40,9 +42,10 @@ export const Project_oasis = () => {
                 data-carousel-item
               >
                 <img
-                  src={`/photos/THIRD YEAR SPRING - Oasis/${img}`}
+                  src={`${prefix}/photos/THIRD YEAR SPRING - Oasis/${img}`}
                   className="w-full h-full object-contain"
                   alt=""
+                  onClick={() => openImage(`${prefix}/photos/CONSTRUCTION SET - Network/${img}`)}
                 />
               </div>
             ))}
@@ -71,10 +74,10 @@ export const Project_oasis = () => {
           {/* Section 1 */}
           <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 w-full">
-              <img src="/photos/THIRD YEAR SPRING - Oasis/Oasis-3.jpg"
+              <img src={`${prefix}/photos/THIRD YEAR SPRING - Oasis/Oasis-3.jpg`}
               className="rounded-xl shadow-lg object-contain cursor-pointer"
               alt=""
-              onClick={() => openImage(`/photos/THIRD YEAR SPRING - Oasis/Oasis-3.jpg`)}
+              onClick={() => openImage(`${prefix}/photos/THIRD YEAR SPRING - Oasis/Oasis-3.jpg`)}
             />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>
@@ -96,10 +99,10 @@ export const Project_oasis = () => {
               </p>
             </div>
             <div className="lg:w-1/2 w-full">
-              <img src="/photos/THIRD YEAR SPRING - Oasis/Oasis-7.jpg"
+              <img src={`${prefix}/photos/THIRD YEAR SPRING - Oasis/Oasis-7.jpg`}
               className="rounded-xl shadow-lg object-contain cursor-pointer"
               alt=""
-              onClick={() => openImage(`/photos/THIRD YEAR SPRING - Oasis/Oasis-7.jpg`)} />
+              onClick={() => openImage(`${prefix}/photos/THIRD YEAR SPRING - Oasis/Oasis-7.jpg`)} />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>
 
