@@ -35,7 +35,7 @@ export const Project_fan_bridge = () => {
               <div
                 key={index}
                 className={`hidden duration-700 ease-in-out`}
-                data-carousel-item={index === 0 ? "active" : undefined}
+                data-carousel-item
               >
                 <img
                   src={`${prefix}photos/FALL THIRD YEAR - Fan-Bridge/${img}`}
