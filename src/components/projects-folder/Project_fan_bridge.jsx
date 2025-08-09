@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import 'flowbite'
 
 const prefix = import.meta.env.BASE_URL;
 
@@ -38,9 +39,9 @@ export const Project_fan_bridge = () => {
                 data-carousel-item
               >
                 <img
-                  src={`${prefix}photos/FALL THIRD YEAR - Fan-Bridge/${img}`}
+                  src={`${prefix}${encodeURIComponent("photos/FALL THIRD YEAR - Fan-Bridge/")}${img}`}
                   className="w-full h-full object-contain"
-                  onClick={() => openImage(`${prefix}photos/FALL THIRD YEAR - Fan-Bridge/${img}`)}
+                  onClick={() => openImage(`${prefix}${encodeURIComponent("photos/FALL THIRD YEAR - Fan-Bridge/")}${img}`)}
                   alt=""
                 />
               </div>
