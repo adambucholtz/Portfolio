@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import 'flowbite'
 
 const prefix = import.meta.env.BASE_URL;
+const encodePath = (path) => path.replace(/ /g, '%20');
 
 const networkGallery = [
   "Network1.png",
@@ -52,10 +53,10 @@ export const Project_network = () => {
                 data-carousel-item
               >
                 <img
-                  src={`${prefix}${encodeURIComponent("photos/CONSTRUCTION SET - Network/")}${img}`}
+                  src={`${prefix}${encodePath("photos/CONSTRUCTION SET - Network/")}${encodePath(img)}`}
                   className="w-full h-full object-contain"
                   alt=""
-                  onClick={() => openImage(`${prefix}${encodeURIComponent("photos/CONSTRUCTION SET - Network/")}${img}`)}
+                  onClick={() => openImage(`${prefix}${encodePath("photos/CONSTRUCTION SET - Network/")}${encodePath(img)}`)}
                 />
               </div>
             ))}
