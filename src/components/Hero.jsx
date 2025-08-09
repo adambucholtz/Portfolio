@@ -1,26 +1,28 @@
 import React, { useState } from 'react'
 import 'flowbite'
 
+const prefix = import.meta.env.BASE_URL;
+
 const imagePaths = [
   [
-    '/Portfolio/photos/THIRD YEAR SPRING - Oasis/Oasis-1.jpg',
-    '/Portfolio/photos/SPRING SECOND YEAR - Shift/Shift-Render-Lobby.png',
-    '/Portfolio/photos/SPRING SECOND YEAR - Shift/Shift-Render-1.png',
+    `${prefix}photos/THIRD YEAR SPRING - Oasis/Oasis-1.jpg`,
+    `${prefix}photos/SPRING SECOND YEAR - Shift/Shift-Render-Lobby.png`,
+    `${prefix}photos/SPRING SECOND YEAR - Shift/Shift-Render-1.png`,
   ],
   [
-    '/Portfolio/photos/SPRING SECOND YEAR - Shift/Shift-Render-2.png', // Needs Aproval
-    '/Portfolio/photos/FALL SECOND YEAR/Leimert-1.png',
-    '/Portfolio/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-1.jpeg',
+    `${prefix}photos/SPRING SECOND YEAR - Shift/Shift-Render-2.png`,
+    `${prefix}photos/FALL SECOND YEAR/Leimert-1.png`,
+    `${prefix}photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-1.jpeg`,
   ],
   [
-    '/Portfolio/photos/THIRD YEAR SPRING - Oasis/Oasis-5.jpg', // maybe
-    '/Portfolio/photos/FALL SECOND YEAR/Leimert-2.png',
-    '/Portfolio/photos/SPRING SECOND YEAR - Shift/Shift-1.png',
+    `${prefix}photos/THIRD YEAR SPRING - Oasis/Oasis-5.jpg`,
+    `${prefix}photos/FALL SECOND YEAR/Leimert-2.png`,
+    `${prefix}photos/SPRING SECOND YEAR - Shift/Shift-1.png`,
   ],
   [
-    '/Portfolio/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Model-1.png',
-    '/Portfolio/photos/FALL SECOND YEAR/Leimert-3.png', //no 
-    '/Portfolio/photos/FALL SECOND YEAR/Leimert-4.png', //no 
+    `${prefix}photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Model-1.png`,
+    `${prefix}photos/FALL SECOND YEAR/Leimert-3.png`,
+    `${prefix}photos/FALL SECOND YEAR/Leimert-4.png`,
   ],
 ];
 
