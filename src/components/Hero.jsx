@@ -3,24 +3,24 @@ import 'flowbite'
 
 const imagePaths = [
   [
-    `${import.meta.env.BASE_URL}/photos/THIRD YEAR SPRING - Oasis/Oasis-1.jpg`,
-    '/photos/SPRING SECOND YEAR - Shift/Shift-Render-Lobby.png',
-    '/photos/SPRING SECOND YEAR - Shift/Shift-Render-1.png',
+    '/Portfolio/photos/THIRD YEAR SPRING - Oasis/Oasis-1.jpg',
+    '/Portfolio/photos/SPRING SECOND YEAR - Shift/Shift-Render-Lobby.png',
+    '/Portfolio/photos/SPRING SECOND YEAR - Shift/Shift-Render-1.png',
   ],
   [
-    '/photos/SPRING SECOND YEAR - Shift/Shift-Render-2.png', // Needs Aproval
-    '/photos/FALL SECOND YEAR/Leimert-1.png',
-    '/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-1.jpeg',
+    '/Portfolio/photos/SPRING SECOND YEAR - Shift/Shift-Render-2.png', // Needs Aproval
+    '/Portfolio/photos/FALL SECOND YEAR/Leimert-1.png',
+    '/Portfolio/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-1.jpeg',
   ],
   [
-    '/photos/THIRD YEAR SPRING - Oasis/Oasis-5.jpg', // maybe
-    '/photos/FALL SECOND YEAR/Leimert-2.png',
-    '/photos/SPRING SECOND YEAR - Shift/Shift-1.png',
+    '/Portfolio/photos/THIRD YEAR SPRING - Oasis/Oasis-5.jpg', // maybe
+    '/Portfolio/photos/FALL SECOND YEAR/Leimert-2.png',
+    '/Portfolio/photos/SPRING SECOND YEAR - Shift/Shift-1.png',
   ],
   [
-    '/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Model-1.png',
-    '/photos/FALL SECOND YEAR/Leimert-3.png', //no 
-    '/photos/FALL SECOND YEAR/Leimert-4.png', //no 
+    '/Portfolio/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Model-1.png',
+    '/Portfolio/photos/FALL SECOND YEAR/Leimert-3.png', //no 
+    '/Portfolio/photos/FALL SECOND YEAR/Leimert-4.png', //no 
   ],
 ];
 
