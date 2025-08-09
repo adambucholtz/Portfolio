@@ -33,7 +33,7 @@ const projectData = [
     title: "Network - Group Work",
     description:
       "The Network addresses the desired agency sought after by the target demographic of temporary occupants...",
-    image: "/photos/CONSTRUCTION SET - Network/Network-1.png",
+    image: "/photos/CONSTRUCTION SET - Network/Network2.png",
     link: "#Project_network",
   },
 ];
@@ -41,7 +41,7 @@ const projectData = [
 export const Projects = () => {
   return (
     <div id="works" className="relative min-h-screen w-screen bg-primary-theme px-4 py-16">
-      <h2 className="font-quint text-text-primary text-center text-6xl lg:text-8xl">Selected Works</h2>
+      <h2 className="font-serif text-text-primary text-center text-6xl lg:text-8xl">Selected Works</h2>
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-10">
         {projectData.map((project, index) => (
           <div

@@ -27,8 +27,8 @@ export const Project_oasis = () => {
   return (
     <div id="Project_oasis" className="w-screen bg-[#fffefb] text-[#1e1e1e] py-16 px-4 md:px-10 lg:px-16 space-y-10">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-5xl font-bold text-justify">Oasis</h2>
-        <h2>Public, Multi-Family Residential</h2>
+        <h2 className="font-serif text-5xl font-bold text-justify">Oasis</h2>
+        <h2 className="font-sans">Public, Multi-Family Residential</h2>
 
         {/* Image Carousel */}
         <div id="controls-carousel" className="relative items-center justify-center w-full mt-4 mb-20" data-carousel="static">

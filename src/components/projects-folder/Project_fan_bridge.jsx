@@ -23,8 +23,8 @@ export const Project_fan_bridge = () => {
   return (
     <div id="Project_fan_bridge" className="w-screen bg-[#fdfaf5] text-[#1e1e1e] py-16 px-4 md:px-10 lg:px-16 space-y-10">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-5xl font-bold text-justify">The Observatory</h2>
-        <h2>Mix, Public, Residential</h2>
+        <h2 className="font-serif text-5xl font-bold text-justify">The Observatory</h2>
+        <h2 className="font-sans">Mix, Public, Residential</h2>
 
         {/* Image Carousel */}
         <div id="controls-carousel" className="relative items-center justify-center w-full mt-4 mb-20" data-carousel="static">

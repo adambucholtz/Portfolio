@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 
-const networkImages = [
-  "Network-1.png",
-  "Network-3.png",
-  "Network-4.png",
-  "Network-5.png",
-  "Network-6.png",
-  "Network-7.png",
+const networkGallery = [
+  "Network1.png",
+  "Network2.png",
+  "Network3.png",
+  "Network4.png",
+  "Network5.png",
+  "Network6.png",
 ];
 
 export const Project_network = () => {
@@ -30,7 +30,7 @@ export const Project_network = () => {
         {/* Image Carousel */}
         <div id="controls-carousel" className="relative items-center justify-center w-full mt-4 mb-20" data-carousel="static">
           <div className="relative h-[750px] overflow-hidden rounded-2xl shadow-xl">
-            {networkImages.map((img, index) => (
+            {networkGallery.map((img, index) => (
               <div
                 key={index}
                 className={`hidden duration-700 ease-in-out`}
@@ -87,10 +87,10 @@ export const Project_network = () => {
               </p>
             </div>
             <div className="lg:w-1/2 w-full">
-              <img src="/photos/CONSTRUCTION SET - Network/Network-5.png"
+              <img src="/photos/CONSTRUCTION SET - Network/Network7.png"
                 className="rounded-xl shadow-lg object-contain cursor-pointer"
                 alt=""
-                onClick={() => openImage(`/photos/CONSTRUCTION SET - Network/Network-5.png`)}
+                onClick={() => openImage(`/photos/CONSTRUCTION SET - Network/Network7.png`)}
               />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>
@@ -100,10 +100,10 @@ export const Project_network = () => {
           {/* Section 2 */}
           <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 w-full">
-              <img src="/photos/CONSTRUCTION SET - Network/Network-5.png"
+              <img src="/photos/CONSTRUCTION SET - Network/Network8.png"
                 className="rounded-xl shadow-lg object-contain cursor-pointer"
                 alt=""
-                onClick={() => openImage(`/photos/CONSTRUCTION SET - Network/Network-5.png`)}
+                onClick={() => openImage(`/photos/CONSTRUCTION SET - Network/Network8.png`)}
               />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>
@@ -143,10 +143,10 @@ export const Project_network = () => {
               </p>
             </div>
             <div className="lg:w-1/2 w-full">
-              <img src="/photos/CONSTRUCTION SET - Network/Network-6.png"
+              <img src="/photos/CONSTRUCTION SET - Network/Network9.png"
                 className="rounded-xl shadow-lg object-contain cursor-pointer"
                 alt=""
-                onClick={() => openImage(`/photos/CONSTRUCTION SET - Network/Network-6.png`)}
+                onClick={() => openImage(`/photos/CONSTRUCTION SET - Network/Network9.png`)}
               />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>
