@@ -44,10 +44,10 @@ export const Project_oasis = () => {
                 data-carousel-item
               >
                 <img
-                  src={`${prefix}${encodePath("photos/THIRD YEAR SPRING - Oasis/")}${encodePath(img)}`}
+                  src={`${prefix}${encodePath("photos/THIRD YEAR SPRING - Oasis/")}${img}`}
                   className="w-full h-full object-contain"
                   alt=""
-                  onClick={() => openImage(`${prefix}${encodePath("photos/THIRD YEAR SPRING - Oasis/")}${encodePath(img)}`)}
+                  onClick={() => openImage(`${prefix}${encodePath("photos/THIRD YEAR SPRING - Oasis/")}${img}`)}
                 />
               </div>
             ))}

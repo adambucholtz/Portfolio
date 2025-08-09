@@ -42,10 +42,10 @@ export const Project_shift = () => {
                 data-carousel-item
               >
                 <img
-                  src={`${prefix}${encodePath("photos/SPRING SECOND YEAR - Shift/")}${encodePath(img)}`}
+                  src={`${prefix}${encodePath("photos/SPRING SECOND YEAR - Shift/")}${img}`}
                   className="w-full h-full object-contain"
                   alt=""
-                  onClick={() => openImage(`${prefix}${encodePath("photos/SPRING SECOND YEAR - Shift/")}${encodePath(img)}`)}
+                  onClick={() => openImage(`${prefix}${encodePath("photos/SPRING SECOND YEAR - Shift/")}${img}`)}
                 />
               </div>
             ))}

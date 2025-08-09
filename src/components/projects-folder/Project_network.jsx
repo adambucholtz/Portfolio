@@ -53,10 +53,10 @@ export const Project_network = () => {
                 data-carousel-item
               >
                 <img
-                  src={`${prefix}${encodePath("photos/CONSTRUCTION SET - Network/")}${encodePath(img)}`}
+                  src={`${prefix}${encodePath("photos/CONSTRUCTION SET - Network/")}${img}`}
                   className="w-full h-full object-contain"
                   alt=""
-                  onClick={() => openImage(`${prefix}${encodePath("photos/CONSTRUCTION SET - Network/")}${encodePath(img)}`)}
+                  onClick={() => openImage(`${prefix}${encodePath("photos/CONSTRUCTION SET - Network/")}${img}`)}
                 />
               </div>
             ))}

@@ -40,9 +40,9 @@ export const Project_fan_bridge = () => {
                 data-carousel-item
               >
                 <img
-                  src={`${prefix}${encodePath("photos/FALL THIRD YEAR - Fan-Bridge/")}${encodePath(img)}`}
+                  src={`${prefix}${encodePath("photos/FALL THIRD YEAR - Fan-Bridge/")}${img}`}
                   className="w-full h-full object-contain"
-                  onClick={() => openImage(`${prefix}${encodePath("photos/FALL THIRD YEAR - Fan-Bridge/")}${encodePath(img)}`)}
+                  onClick={() => openImage(`${prefix}${encodePath("photos/FALL THIRD YEAR - Fan-Bridge/")}${img}`)}
                   alt=""
                 />
               </div>
