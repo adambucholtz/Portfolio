@@ -52,10 +52,10 @@ export const Project_network = () => {
                 data-carousel-item
               >
                 <img
-                  src={`${prefix}photos/CONSTRUCTION SET - Network/${img}`}
+                  src={`${prefix}${encodeURIComponent("photos/CONSTRUCTION SET - Network/")}${img}`}
                   className="w-full h-full object-contain"
                   alt=""
-                  onClick={() => openImage(`${prefix}photos/CONSTRUCTION SET - Network/${img}`)}
+                  onClick={() => openImage(`${prefix}${encodeURIComponent("photos/CONSTRUCTION SET - Network/")}${img}`)}
                 />
               </div>
             ))}
