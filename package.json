@@ -7,8 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "postbuild": "New-Item -ItemType File -Path dist/.nojekyll -Force",
-    "deploy": "npm run build && npm run postbuild && gh-pages -d dist",
+    "postbuild": "type nul > dist/.nojekyll",
+    "deploy": "npm run build && npm run postbuild && gh-pages -d dist -u \"Adam Bucholtz <ahbucholtz@cpp.edu>\"",
     "lint": "eslint .",
     "preview": "vite preview",
     "postinstall": "flowbite-react patch"

@@ -3,7 +3,7 @@ import 'flowbite'
 
 const imagePaths = [
   [
-    '/photos/THIRD YEAR SPRING - Oasis/Oasis-1.jpg',
+    `${import.meta.env.BASE_URL}/photos/THIRD YEAR SPRING - Oasis/Oasis-1.jpg`,
     '/photos/SPRING SECOND YEAR - Shift/Shift-Render-Lobby.png',
     '/photos/SPRING SECOND YEAR - Shift/Shift-Render-1.png',
   ],
