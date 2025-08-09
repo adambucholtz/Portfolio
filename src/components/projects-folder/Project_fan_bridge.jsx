@@ -35,12 +35,12 @@ export const Project_fan_bridge = () => {
               <div
                 key={index}
                 className={`hidden duration-700 ease-in-out`}
-                data-carousel-item
+                data-carousel-item={index === 0 ? "active" : undefined}
               >
                 <img
-                  src={`${prefix}("photos/FALL THIRD YEAR - Fan-Bridge/")}${img}`}
+                  src={`${prefix}photos/FALL THIRD YEAR - Fan-Bridge/${img}`}
                   className="w-full h-full object-contain"
-                  onClick={() => openImage(`${prefix}${encodePath("photos/FALL THIRD YEAR - Fan-Bridge/")}${img}`)}
+                  onClick={() => openImage(`${prefix}photos/FALL THIRD YEAR - Fan-Bridge/${img}`)}
                   alt=""
                 />
               </div>
