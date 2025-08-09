@@ -12,17 +12,17 @@ const imagePaths = [
   [
     `${prefix}photos/SPRING SECOND YEAR - Shift/Shift-Render-2.png`,
     `${prefix}photos/FALL SECOND YEAR/Leimert-1.png`,
+    `${prefix}photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Model-1.png`,
+  ],
+  [
+    `${prefix}/photos/EyeCandy2.png`,
+    `${prefix}photos/FALL SECOND YEAR/Leimert-2.png`,
     `${prefix}photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-1.jpeg`,
   ],
   [
-    `${prefix}photos/THIRD YEAR SPRING - Oasis/Oasis-5.jpg`,
-    `${prefix}photos/FALL SECOND YEAR/Leimert-2.png`,
     `${prefix}photos/SPRING SECOND YEAR - Shift/Shift-1.png`,
-  ],
-  [
-    `${prefix}photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Model-1.png`,
-    `${prefix}photos/FALL SECOND YEAR/Leimert-3.png`,
-    `${prefix}photos/FALL SECOND YEAR/Leimert-4.png`,
+    `${prefix}/photos/EyeCandy3.png`,
+    `${prefix}/photos/ext. pavillion 2.jpg`,
   ],
 ];
 
