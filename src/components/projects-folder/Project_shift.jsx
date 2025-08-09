@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import 'flowbite'
+
 
 const prefix = import.meta.env.BASE_URL;
 const encodePath = (path) => path.replace(/ /g, '%20');
