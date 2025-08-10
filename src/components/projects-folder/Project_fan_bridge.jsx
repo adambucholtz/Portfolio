@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import { useEffect } from 'react';
+import 'flowbite';
+import { Carousel } from 'flowbite';
 
 const prefix = import.meta.env.BASE_URL;
 
@@ -6,13 +9,21 @@ const fanBridgeGallery = [
   "Fan-Bridge-1.jpeg",
   "Fan-Bridge-2.png",
   "Fan-Bridge-2nd-Floor-Plan.png",
-  "/Fan-Bridge-Section-EW-NS.png",
+  "Fan-Bridge-Section-EW-NS.png",
 ];
 
 
 export const Project_fan_bridge = () => {
   {/** Expand Image  */ }
   const [selectedImage, setSelectedImage] = useState(null);
+
+  useEffect(() => {
+    const carouselElement = document.getElementById('controls-carousel');
+    if (carouselElement) {
+      // manually re-initialize Flowbite carousel
+      new Carousel(carouselElement);
+    }
+  }, []);
 
   const openImage = (src) => {
     setSelectedImage(src);
