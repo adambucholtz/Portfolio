@@ -34,8 +34,8 @@ export const Project_fan_bridge = () => {
             {fanBridgeGallery.map((img, index) => (
               <div
                 key={index}
-                className={`hidden duration-700 ease-in-out`}
-                data-carousel-item
+                className={`h-full duration-700 ease-in-out ${index === 0 ? 'block' : 'hidden'}`}
+                data-carousel-item={index === 0 ? 'active' : ''}
               >
                 <img
                   src={`${prefix}photos/FALL THIRD YEAR - Fan-Bridge/${img}`}
