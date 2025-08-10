@@ -38,15 +38,15 @@ export const Hero = () => {
   useEffect(() => {
     const timeout1 = setTimeout(() => {
       setShowLogo(true);      
-    }, 3000); // display title for 3.5s
+    }, 1); // display title for 3.5s
 
     const timeout2 = setTimeout(() => {
       setShowGallery(true);
-    }, 3200); // small delay after fade out
+    }, 1); // small delay after fade out
 
     const timeout3 = setTimeout(() => {
       setShowTitle(true);
-    }, 5000);
+    }, 4000);
 
     return () => {
       clearTimeout(timeout1);
@@ -67,7 +67,7 @@ export const Hero = () => {
     <div id="home" className="bg-[#e4dcc7] h-dvh w-screen flex items-center justify-center relative overflow-hidden">
 
       {/**Text */}
-      {showTitle && (<h1 className="font-helvetica text-[#000000] absolute z-10 text-2xl md:text-3xl text-center px-4 animate-fadeOut">Selected works over the years.</h1>)}
+      {showTitle && (<h1 className="font-helvetica text-[#000000] absolute z-10 left-[350px] bottom-28 text-2xl md:text-3xl text-center px-4 animate-fadeIn">Selected works over the years.</h1>)}
 
       {/** LOGO */}
       {showLogo && (<img className="absolute z-10 w-64 h-64 md:w-[450px] md:h-[450px] md:-left-20 md:-bottom-24 bottom-10 opacity-10 pointer-events-none animate-fadeInRight"

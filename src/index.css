@@ -50,7 +50,7 @@ html {
 @keyframes fadeInRight {
     from {
         opacity: 0.25;
-        transform: translateX(600px);
+        transform: translateX(650px);
     }
 
     to {
@@ -89,7 +89,7 @@ html {
     }
 
     .animate-fadeInRight {
-        animation: fadeInRight 2s ease-out forwards;
+        animation: fadeInRight 2.5s ease-out forwards;
     }
 
 
