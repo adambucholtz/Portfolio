@@ -6,14 +6,14 @@ const encodePath = (path) => path.replace(/ /g, '%20');
 
 const oasisGallery = [
   "Oasis-1.jpg",
-  "Oasis-11.jpg",
-  "Oasis-5.jpg",
-  "Oasis-2.jpg",
+  "Oasis-9.jpg",
   "Oasis-3.jpg",
-  "Oasis-4.jpg",
-  "Oasis-6.jpg",
   "Oasis-7.jpg",
   "Oasis-8.jpg",
+  "Oasis-2.jpg",
+  "Oasis-4.jpg",
+  "Oasis-5.jpg",
+  "Oasis-10.jpg",
 ];
 
 export const Project_oasis = () => {
@@ -76,10 +76,10 @@ export const Project_oasis = () => {
           {/* Section 1 */}
           <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 w-full">
-              <img src={`${prefix}/photos/THIRD YEAR SPRING - Oasis/Oasis-3.jpg`}
+              <img src={`${prefix}/photos/THIRD YEAR SPRING - Oasis/Oasis-11.jpg`}
               className="rounded-xl shadow-lg object-contain cursor-pointer"
               alt=""
-              onClick={() => openImage(`${prefix}/photos/THIRD YEAR SPRING - Oasis/Oasis-3.jpg`)}
+              onClick={() => openImage(`${prefix}/photos/THIRD YEAR SPRING - Oasis/Oasis-11.jpg`)}
             />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>
@@ -101,10 +101,10 @@ export const Project_oasis = () => {
               </p>
             </div>
             <div className="lg:w-1/2 w-full">
-              <img src={`${prefix}/photos/THIRD YEAR SPRING - Oasis/Oasis-7.jpg`}
+              <img src={`${prefix}/photos/THIRD YEAR SPRING - Oasis/Oasis-6.jpg`}
               className="rounded-xl shadow-lg object-contain cursor-pointer"
               alt=""
-              onClick={() => openImage(`${prefix}/photos/THIRD YEAR SPRING - Oasis/Oasis-7.jpg`)} />
+              onClick={() => openImage(`${prefix}/photos/THIRD YEAR SPRING - Oasis/Oasis-6.jpg`)} />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>
 

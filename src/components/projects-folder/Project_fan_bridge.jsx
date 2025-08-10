@@ -5,8 +5,8 @@ const prefix = import.meta.env.BASE_URL;
 const fanBridgeGallery = [
   "Fan-Bridge-1.jpeg",
   "Fan-Bridge-2.png",
-  "Fan-Bridge-3.png",
-  "Fan-Bridge-Data.png",
+  "Fan-Bridge-2nd-Floor-Plan.png",
+  "/Fan-Bridge-Section-EW-NS.png",
 ];
 
 
@@ -78,10 +78,10 @@ export const Project_fan_bridge = () => {
 
             <div className="lg:w-1/2 w-full">
               <img
-                src={`${prefix}/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-2nd-Floor-Plan.png`}
+                src={`${prefix}/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-3.png`}
                 className="rounded-xl shadow-lg object-contain cursor-pointer"
                 alt=""
-                onClick={() => openImage(`${prefix}/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-2nd-Floor-Plan.png`)}
+                onClick={() => openImage(`${prefix}/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-3.png`)}
               />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>
@@ -90,10 +90,10 @@ export const Project_fan_bridge = () => {
           {/* Section 2 */}
           <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 w-full">
-              <img src={`${prefix}/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Section-EW-NS.png`}
+              <img src={`${prefix}/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Data.png`}
                 className="rounded-xl shadow-lg object-contain cursor-pointer"
                 alt=""
-                onClick={() => openImage(`${prefix}/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Section-EW-NS.png`)} />
+                onClick={() => openImage(`${prefix}/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Data.png`)} />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>
 
@@ -126,10 +126,10 @@ export const Project_fan_bridge = () => {
           {/* Section 4 */}
           <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 w-full">
-              <img src={`${prefix}/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Section-EW-NS.png`}
+              <img src={`${prefix}/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Site-Plan-Section.png`}
                 className="rounded-xl shadow-lg object-contain cursor-pointer"
                 alt="Click Image to Expand"
-                onClick={() => openImage(`${prefix}/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Section-EW-NS.png`)}
+                onClick={() => openImage(`${prefix}/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Site-Plan-Section.png`)}
               />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>

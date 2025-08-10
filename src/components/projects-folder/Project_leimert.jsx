@@ -8,7 +8,10 @@ const leimertGallery = [
   "Leimert-1.png",
   "Leimert-2.png",
   "Leimert-3.png",
-  "Leimert-4.png",
+  "Leimert-Diagram1.png",
+  "Leimert-2nd-3rd-Plan.png",
+  "Leimert-Sub-Ground-Plan.png",
+  "Leimert-Cross-Section-B-C.png",
 ];
 
 export const Project_leimert = () => {
@@ -80,10 +83,10 @@ export const Project_leimert = () => {
             </div>
 
             <div className="lg:w-1/2 w-full">
-              <img src={`${prefix}/photos/FALL SECOND YEAR/Leimert-2nd-3rd-Plan.png`}
+              <img src={`${prefix}/photos/FALL SECOND YEAR/Leimert-Diagram2.png`}
                 className="rounded-xl shadow-lg object-contain cursor-pointer"
                 alt=""
-                onClick={() => openImage(`${prefix}/photos/FALL SECOND YEAR/Leimert-2nd-3rd-Plan.png`)}
+                onClick={() => openImage(`${prefix}/photos/FALL SECOND YEAR/Leimert-Diagram2.png`)}
               />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>
@@ -92,10 +95,10 @@ export const Project_leimert = () => {
           {/* Section 2 */}
           <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 w-full">
-              <img src={`${prefix}/photos/FALL SECOND YEAR/Leimert-Sub-Ground-Plan.png`}
+              <img src={`${prefix}/photos/FALL SECOND YEAR/Leimert-4.png`}
                 className="rounded-xl shadow-lg object-contain cursor-pointer"
                 alt=""
-                onClick={() => openImage(`${prefix}/photos/FALL SECOND YEAR/Leimert-Sub-Ground-Plan.png`)}
+                onClick={() => openImage(`${prefix}/photos/FALL SECOND YEAR/Leimert-4.png`)}
               />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>
@@ -117,10 +120,10 @@ export const Project_leimert = () => {
               </p>
             </div>
             <div className="lg:w-1/2 w-full">
-              <img src={`${prefix}/photos/FALL SECOND YEAR/Leimert-Cross-Section-B-C.png`}
+              <img src={`${prefix}/photos/FALL SECOND YEAR/Leimert-Longitudinal-Section-A.png`}
                 className="rounded-xl shadow-lg object-contain cursor-pointer"
                 alt=""
-                onClick={() => openImage(`${prefix}/photos/FALL SECOND YEAR/Leimert-Cross-Section-B-C.png`)}
+                onClick={() => openImage(`${prefix}/photos/FALL SECOND YEAR/Leimert-Longitudinal-Section-A.png`)}
               />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>

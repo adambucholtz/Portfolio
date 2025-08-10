@@ -6,12 +6,14 @@ const encodePath = (path) => path.replace(/ /g, '%20');
 
 const shiftGallery = [
   "Shift-1.png",
+  "Shift-Render-2.png",
+  "Shift-Render-Lobby.png",
   "Shift-3.png",
   "Shift-4.png",
   "Shift-5.png",
   "Shift-6.png",
-  "Shift-7.png",
-  "Shift-Render-1.png",
+  "Shift-8.png",
+  "Shift-9.png",
 ];
 
 export const Project_shift = () => {
@@ -74,10 +76,10 @@ export const Project_shift = () => {
           {/* Section 1 */}
           <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 w-full">
-              <img src={`${prefix}/photos/SPRING SECOND YEAR - Shift/Shift-3.png`}
+              <img src={`${prefix}/photos/SPRING SECOND YEAR - Shift/Shift-7.png`}
               className="rounded-xl shadow-lg object-contain cursor-pointer"
               alt=""
-              onClick={() => openImage(`${prefix}/photos/SPRING SECOND YEAR - Shift/Shift-3.png`)}
+              onClick={() => openImage(`${prefix}/photos/SPRING SECOND YEAR - Shift/Shift-7.png`)}
             />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>
@@ -106,10 +108,10 @@ export const Project_shift = () => {
               </p>
             </div>
             <div className="lg:w-1/2 w-full">
-              <img src={`${prefix}/photos/SPRING SECOND YEAR - Shift/Shift-8.png`}
+              <img src={`${prefix}/photos/SPRING SECOND YEAR - Shift/Shift-Render-1.png`}
               className="rounded-xl shadow-lg object-contain cursor-pointer"
               alt=""
-              onClick={() => openImage(`${prefix}/photos/SPRING SECOND YEAR - Shift/Shift-8.png`)}
+              onClick={() => openImage(`${prefix}/photos/SPRING SECOND YEAR - Shift/Shift-Render-1.png`)}
             />
               <p className="text-center text-lg italic mt-5 text-[#b8b7b7]">*Click Image to expand*</p>
             </div>
