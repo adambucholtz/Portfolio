@@ -27,7 +27,7 @@ const imagePaths = [
 ];
 
 const imageClass =
-  'h-full max-w-full rounded-lg opacity-80 hover:opacity-100 hover:scale-110 hover:shadow-xl transition-all duration-500 ease-in-out';
+  'h-full max-w-full rounded-lg opacity-85 hover:opacity-100 hover:scale-105 hover:shadow-2xl transition-all duration-500 ease-in-out';
 
 export const Hero = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -41,13 +41,14 @@ export const Hero = () => {
   };
 
   return (
-    <div id="home" className="bg-[#cecbc4] h-dvh w-screen flex items-center justify-center relative overflow-hidden">
-      <img className="absolute z-10 h-[700px] w-[700px] -left-28 -bottom-36" src={`${prefix}/photos/LOGO.png`} alt="" />
-      <h1 className="font-sans absolute z-10 left-1/3 bottom-40 text-3xl">Selected works over the years.</h1>
+    <div id="home" className="bg-[#e4dcc7] h-dvh w-screen flex items-center justify-center relative overflow-hidden">
+      <img className="absolute z-10 h-[700px] w-[700px] -left-28 -bottom-36 opacity-10 pointer-events-none animate-fadeIn delay-0" 
+      src={`${prefix}/photos/LOGO.png`} alt="" />
+      <h1 className="font-sans absolute z-10 left-1/3 bottom-40 text-3xl animate-fadeIn delay-100">Selected works over the years.</h1>
 
       {/* Gallery */}
-      <div className="flex w-full h-full object-contain items-center justify-between">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="flex w-full h-full object-contain items-center justify-between ">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 animate-fadeIn2">
           {imagePaths.map((column, colIndex) => (
             <div key={colIndex} className="grid gap-4">
               {column.map((src, imgIndex) => (

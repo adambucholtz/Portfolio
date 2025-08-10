@@ -79,7 +79,7 @@ export const Project_leimert = () => {
           {/* Section 1 */}
           <div className="flex flex-col lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
-              <p className="project-paragraph">
+              <p className="project-paragraph text-left">
                 The main idea of this project is exploring the variation of the grid in previous
                 renditions to develop varying spaces, depth, and intrigue. The project utilizes
                 its variety and connects the variations together to form one cohesive through
@@ -109,7 +109,7 @@ export const Project_leimert = () => {
             </div>
 
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
-              <p className="project-paragraph">There is a constant dialogue between outdoor and indoor spaces both with
+              <p className="project-paragraph text-right">There is a constant dialogue between outdoor and indoor spaces both with
                 subtracting away from the mass and through glazing. </p>
             </div>
           </div>
@@ -117,7 +117,7 @@ export const Project_leimert = () => {
           {/* Section 3 */}
           <div className="flex flex-col lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
-              <p className="project-paragraph">
+              <p className="project-paragraph text-left">
                 Another focus of the proposal is its connection with gardening. Many of the spaces
                 that open the elements
                 can be used to house a variety of plant life bringing the earth within and con

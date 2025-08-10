@@ -76,7 +76,7 @@ export const Project_fan_bridge = () => {
           {/* Section 1 */}
           <div className="flex flex-col lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
-              <h3 className="text-2xl font-semibold">Occupancy & Height</h3>
+              <h3 className="text-2xl font-semibold underline underline-offset-2">Occupancy & Height</h3>
               <p className="">Levels 1 & 2 are classified as <strong>Business (B)</strong>, and Level 3 is classified as <strong>Residential (R-2)</strong>.</p>
               <p className="">The building is designed to a <strong>Code Height</strong> of <strong>60'-0"</strong> and <strong>4 stories</strong>, constructed using <strong>Type IVA</strong> fire-resistive construction.</p>
               <p className="">Sprinklered according to <strong>NFPA-13 (903.3.1.1)</strong> for increased safety and allowable limits.</p>
@@ -104,17 +104,17 @@ export const Project_fan_bridge = () => {
             </div>
 
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
-              <h3 className="text-2xl font-semibold">Material & Exterior Systems</h3>
-              <p>Exterior walls are constructed from <strong>noncombustible or ignition-resistant materials</strong> such as <em>Shou Sugi Ban</em> siding and stone paneling.</p>
-              <p>Windows meet CBC 708A standards with <strong>multi-pane tempered glazing</strong>.</p>
-              <p>Recycled aluminum louver shading and multi-pane glazing systems improve energy performance.</p>
+              <h3 className="text-2xl text-right font-semibold underline underline-offset-2">Material & Exterior Systems</h3>
+              <p className="text-right">Exterior walls are constructed from <strong>noncombustible or ignition-resistant materials</strong> such as <em>Shou Sugi Ban</em> siding and stone paneling.</p>
+              <p className="text-right">Windows meet CBC 708A standards with <strong>multi-pane tempered glazing</strong>.</p>
+              <p className="text-right">Recycled aluminum louver shading and multi-pane glazing systems improve energy performance.</p>
             </div>
           </div>
 
           {/* Section 3 */}
           <div className="flex flex-col lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
-              <h3 className="text-2xl font-semibold">Fire & Egress</h3>
+              <h3 className="text-2xl font-semibold underline underline-offset-2">Fire & Egress</h3>
               <p>All common paths of egress are under <strong>125'</strong>, complying with IBC Table 1006.2.1 for R-2 occupancies.</p>
               <p>Exit separation exceeds the 1/3 diagonal requirement, with <strong>100'</strong> provided against the <strong>30'</strong> minimum required.</p>
               <p>Handrails maintain <strong>1½" clearance</strong> from adjacent surfaces and are free from sharp elements as per CBC 1014.7.</p>
@@ -141,10 +141,10 @@ export const Project_fan_bridge = () => {
             </div>
 
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
-              <h3 className="text-2xl font-semibold">Assembly & Details</h3>
-              <p>Stone Paneling assembly includes <strong>8" batt insulation</strong>, <strong>3" rigid insulation</strong>, air space, clips, and variable-sized stone panels over gypsum and AVB barriers.</p>
-              <p>Shou Sugi Ban siding features an ignition-resistant layered build over gypsum and batt insulation.</p>
-              <p>Roof edge includes a stainless coping with drip edge, ZIP system sheathing, and closed-cell spray foam for high thermal resistance.</p>
+              <h3 className="text-2xl font-semibold text-right underline underline-offset-2">Assembly & Details</h3>
+              <p className="text-right">Stone Paneling assembly includes <strong>8" batt insulation</strong>, <strong>3" rigid insulation</strong>, air space, clips, and variable-sized stone panels over gypsum and AVB barriers.</p>
+              <p className="text-right">Shou Sugi Ban siding features an ignition-resistant layered build over gypsum and batt insulation.</p>
+              <p className=" text-right">Roof edge includes a stainless coping with drip edge, ZIP system sheathing, and closed-cell spray foam for high thermal resistance.</p>
             </div>
           </div>
         </div>

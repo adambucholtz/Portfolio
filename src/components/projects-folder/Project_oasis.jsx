@@ -88,7 +88,7 @@ export const Project_oasis = () => {
             </div>
 
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
-              <p className="project-paragraph">
+              <p className="project-paragraph text-right">
                 When you think of an <strong>oasis</strong>, it evokes strong feelings of ease, desire, and having your needs met. Not only does the
                 project focus on accommodating the needs of one specific demographic, but a collective of a diverse demographic.
               </p>
@@ -98,7 +98,7 @@ export const Project_oasis = () => {
           {/* Section 2 */}
           <div className="flex flex-col lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
-              <p className="project-paragraph">
+              <p className="project-paragraph text-left">
                 Architecturally, the project was developed from three separate and distinct massings that share a universal ideal. The
                 towers vary in height, size, and lifestyle.
               </p>
@@ -116,7 +116,7 @@ export const Project_oasis = () => {
 
 
         <br></br>
-        <p className="project-paragraph">
+        <p className="project-paragraph text-center">
           The orientation of the towers shelter a central space
           that is peaceful and quaint and steps down from the site continuing to reinforce a sheltered space for the users. This
           space allows users to navigate to any area on the site, solidifying the project’s emphasis on user choice.

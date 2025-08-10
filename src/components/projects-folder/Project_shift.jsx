@@ -91,20 +91,20 @@ export const Project_shift = () => {
 
 
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
-              <p className="project-paragraph">
+              <h2 className="project-paragraph text-right">
                 The project proposal design aims to satisfy environmental
                 needs while facilitating a comfortable space for those inhabiting it,
                 ideally the students, teachers, and staff. Basis of the design was for
                 mulated in exercise one through photographing a tree resembling
                 that of a canopy.
-              </p>
+              </h2>
             </div>
           </div>
 
           {/* Section 2 */}
           <div className="flex flex-col lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
-              <p className="project-paragraph">
+              <p className="project-paragraph text-left">
                 This shifted pattern that emerged could offer an captivating
                 effect while achieving a beneficial environmental impact. By utilizing
                 the <strong>shifts</strong> in the design, overhangs form that protect lower floors
