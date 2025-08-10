@@ -39,7 +39,7 @@ export const Project_fan_bridge = () => {
         <h2 className="font-sans">Mix, Public, Residential</h2>
 
         {/* Image Carousel */}
-        <div className="relative h-[700px] w-full overflow-hidden rounded-2xl shadow-xl mt-6 mb-20">
+        <div className="relative  h-[700px] w-full overflow-hidden rounded-2xl shadow-xl mt-6 mb-20 border-[#dadada]">
           <img
             src={`${prefix}photos/FALL THIRD YEAR - Fan-Bridge/${fanBridgeGallery[currentIndex]}`}
             className="w-full h-full object-contain transition-all duration-500"
@@ -50,19 +50,27 @@ export const Project_fan_bridge = () => {
           />
 
           {/* Prev Button */}
-          <button
-            onClick={goPrev}
-            className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/40 rounded-full p-2 backdrop-blur-sm shadow hover:scale-110 transition"
-          >
-            ‹
+          <button type="button" 
+          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          onClick={goNext} data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/40 shadow-md backdrop-blur-sm hover:scale-105 transition">
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
           </button>
 
           {/* Next Button */}
-          <button
-            onClick={goNext}
-            className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/40 rounded-full p-2 backdrop-blur-sm shadow hover:scale-110 transition"
-          >
-            ›
+          <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" 
+          onClick={goNext} 
+          data-carousel-next>
+            <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/40 shadow-md backdrop-blur-sm hover:scale-105 transition">
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
           </button>
         </div>
 
