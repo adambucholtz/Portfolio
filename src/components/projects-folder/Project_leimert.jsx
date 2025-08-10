@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 
-
 const prefix = import.meta.env.BASE_URL;
-const encodePath = (path) => path.replace(/ /g, '%20');
+
 
 const leimertGallery = [
   "Leimert-1.png",
@@ -15,15 +14,22 @@ const leimertGallery = [
 ];
 
 export const Project_leimert = () => {
-  {/** Expand Image */ }
   const [selectedImage, setSelectedImage] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const openImage = (src) => {
-    setSelectedImage(src);
+  const openImage = (src) => setSelectedImage(src);
+  const closeImage = () => setSelectedImage(null);
+
+  const goPrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? leimertGallery.length - 1 : prevIndex - 1
+    );
   };
 
-  const closeImage = () => {
-    setSelectedImage(null);
+  const goNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === leimertGallery.length - 1 ? 0 : prevIndex + 1
+    );
   };
 
   return (
@@ -33,25 +39,20 @@ export const Project_leimert = () => {
         <h2 className="font-sans">Public, Varying Space, Depth, Intrigue, Garden Space</h2>
 
         {/* Image Carousel */}
-        <div id="controls-carousel" className="relative items-center justify-center w-full mt-4 mb-20" data-carousel="static">
-          <div className="relative h-[750px] overflow-hidden rounded-2xl shadow-xl">
-            {leimertGallery.map((img, index) => (
-              <div
-                key={index}
-                className={`hidden duration-700 ease-in-out`}
-                data-carousel-item
-              >
-                <img
-                  src={`${prefix}${encodePath("photos/FALL SECOND YEAR/")}${img}`}
-                  className="w-full h-full object-contain"
-                  alt=""
-                  onClick={() => openImage(`${prefix}${encodePath("photos/FALL SECOND YEAR/")}${img}`)}
-                />
-              </div>
-            ))}
-          </div>
+        <div className="relative bg-[#fdfaf5] h-[700px] w-full overflow-hidden rounded-2xl shadow-xl mt-6 mb-20 border border-[#e0e0e0]">
+          <img
+            src={`${prefix}photos/FALL SECOND YEAR/${leimertGallery[currentIndex]}`}
+            className="w-full h-full object-contain transition-all duration-500"
+            onClick={() =>
+              openImage(`${prefix}photos/FALL SECOND YEAR/${leimertGallery[currentIndex]}`)
+            }
+            alt=""
+          />
 
-          <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+          {/* Prev Button */}
+          <button type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            onClick={goPrev} data-carousel-prev>
             <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/40 shadow-md backdrop-blur-sm hover:scale-105 transition">
               <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
@@ -59,7 +60,11 @@ export const Project_leimert = () => {
               <span class="sr-only">Previous</span>
             </span>
           </button>
-          <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+
+          {/* Next Button */}
+          <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            onClick={goNext}
+            data-carousel-next>
             <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/40 shadow-md backdrop-blur-sm hover:scale-105 transition">
               <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
@@ -113,7 +118,7 @@ export const Project_leimert = () => {
           <div className="flex flex-col lg:flex-row items-center gap-10">
             <div className="lg:w-1/2 space-y-4 text-lg leading-relaxed">
               <p className="project-paragraph">
-                Another focus of the proposal is its connection with gardening. Many of the spaces 
+                Another focus of the proposal is its connection with gardening. Many of the spaces
                 that open the elements
                 can be used to house a variety of plant life bringing the earth within and con
                 tinuing a connection between exterior and interior.
