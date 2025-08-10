@@ -30,23 +30,23 @@ const imageClass =
   'h-full max-w-full rounded-lg opacity-90 hover:opacity-100 hover:scale-105 hover:shadow-2xl transition-all duration-500 ease-in-out';
 
 export const Hero = () => {
-  const [showTitle, setShowTitle] = useState(true);
+  const [showTitle, setShowTitle] = useState(false);
   const [showLogo, setShowLogo] = useState(false);
   const [showGallery, setShowGallery] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
     const timeout1 = setTimeout(() => {
-      setShowTitle(false);      // Fade out title
-    }, 3500); // display title for 3.5s
+      setShowLogo(true);      
+    }, 3000); // display title for 3.5s
 
     const timeout2 = setTimeout(() => {
-      setShowLogo(true);        // Show logo after title disappears
-    }, 3800); // small delay after fade out
+      setShowGallery(true);
+    }, 3200); // small delay after fade out
 
     const timeout3 = setTimeout(() => {
-      setShowGallery(true);     // Then fade in gallery
-    }, 3800);
+      setShowTitle(true);
+    }, 5000);
 
     return () => {
       clearTimeout(timeout1);
