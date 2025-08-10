@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const prefix = import.meta.env.BASE_URL;
 
 export const Navbar = () => {
+  const [mobileOpen, setMobileOpen] = useState(false);
+  
   return (
     <div className="fixed inset-x-0 top-4 z-50 h-10 border-b-4 border-black transition-all duration-700 sm:inset-x-6 bg-primary-theme bg-opacity-80 rounded-md">
       <header className="absolute top-1/2 w-full -translate-y-1/2">
@@ -72,6 +74,17 @@ export const Navbar = () => {
             </div>
           </div>
         </nav>
+
+        {/* Mobile Nav Menu */}
+        {mobileOpen && (
+          <div className="md:hidden mt-2 w-full bg-primary-theme border-t border-black rounded-b-md shadow-md z-50 absolute">
+            <ul className="flex flex-col py-4 text-center font-tinos text-base text-[#080808] tracking-wide">
+              <li><a href="#about" className="py-2 hover:bg-[#f6f6f6]" onClick={() => setMobileOpen(false)}>about</a></li>
+              <li><a href="#works" className="py-2 hover:bg-[#f6f6f6]" onClick={() => setMobileOpen(false)}>works</a></li>
+              <li><a href="#contact" className="py-2 hover:bg-[#f6f6f6]" onClick={() => setMobileOpen(false)}>contact</a></li>
+            </ul>
+          </div>
+        )}
       </header>
     </div>
   );

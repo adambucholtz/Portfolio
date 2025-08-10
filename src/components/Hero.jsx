@@ -27,7 +27,7 @@ const imagePaths = [
 ];
 
 const imageClass =
-  'h-full max-w-full rounded-lg opacity-85 hover:opacity-100 hover:scale-105 hover:shadow-2xl transition-all duration-500 ease-in-out';
+  'h-full max-w-full rounded-lg opacity-90 hover:opacity-100 hover:scale-105 hover:shadow-2xl transition-all duration-500 ease-in-out';
 
 export const Hero = () => {
   const [showTitle, setShowTitle] = useState(true);
@@ -70,7 +70,7 @@ export const Hero = () => {
       {showTitle && (<h1 className="font-helvetica text-[#000000] absolute z-10 text-2xl md:text-3xl text-center px-4 animate-fadeOut">Selected works over the years.</h1>)}
 
       {/** LOGO */}
-      {showLogo && (<img className="absolute z-10 w-64 h-64 md:w-[500px] md:h-[500px] md:-left-20 md:-bottom-24 bottom-10 opacity-10 pointer-events-none animate-fadeInRight"
+      {showLogo && (<img className="absolute z-10 w-64 h-64 md:w-[450px] md:h-[450px] md:-left-20 md:-bottom-24 bottom-10 opacity-10 pointer-events-none animate-fadeInRight"
         src={`${prefix}/photos/LOGO.png`} alt="" />)}
 
       {/* Gallery */}
