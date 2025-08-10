@@ -1,34 +1,59 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import 'flowbite'
+
+const prefix = import.meta.env.BASE_URL;
 
 const imagePaths = [
   [
-    '/photos/THIRD YEAR SPRING - Oasis/Oasis-1.jpg',
-    '/photos/SPRING SECOND YEAR - Shift/Shift-Render-Lobby.png',
-    '/photos/SPRING SECOND YEAR - Shift/Shift-Render-1.png',
+    `${prefix}photos/THIRD YEAR SPRING - Oasis/Oasis-1.jpg`,
+    `${prefix}photos/SPRING SECOND YEAR - Shift/Shift-Render-Lobby.png`,
+    `${prefix}photos/SPRING SECOND YEAR - Shift/Shift-Render-1.png`,
   ],
   [
-    '/photos/SPRING SECOND YEAR - Shift/Shift-Render-2.png', // Needs Aproval
-    '/photos/FALL SECOND YEAR/Leimert-1.png',
-    '/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-1.jpeg',
+    `${prefix}photos/SPRING SECOND YEAR - Shift/Shift-Render-2.png`,
+    `${prefix}photos/FALL SECOND YEAR/Leimert-1.png`,
+    `${prefix}photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Model-1.png`,
   ],
   [
-    '/photos/THIRD YEAR SPRING - Oasis/Oasis-5.jpg', // maybe
-    '/photos/FALL SECOND YEAR/Leimert-2.png',
-    '/photos/SPRING SECOND YEAR - Shift/Shift-1.png',
+    `${prefix}/photos/EyeCandy2.png`,
+    `${prefix}photos/FALL SECOND YEAR/Leimert-2.png`,
+    `${prefix}photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-1.jpeg`,
   ],
   [
-    '/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-Model-1.png',
-    '/photos/FALL SECOND YEAR/Leimert-3.png', //no 
-    '/photos/FALL SECOND YEAR/Leimert-4.png', //no 
+    `${prefix}photos/SPRING SECOND YEAR - Shift/Shift-1.png`,
+    `${prefix}/photos/EyeCandy3.png`,
+    `${prefix}/photos/ext. pavillion 2.jpg`,
   ],
 ];
 
 const imageClass =
-  'h-full max-w-full rounded-lg opacity-80 hover:opacity-100 hover:scale-110 hover:shadow-xl transition-all duration-500 ease-in-out';
+  'h-full max-w-full rounded-lg opacity-90 hover:opacity-100 hover:scale-105 hover:shadow-2xl transition-all duration-500 ease-in-out';
 
 export const Hero = () => {
+  const [showTitle, setShowTitle] = useState(true);
+  const [showLogo, setShowLogo] = useState(false);
+  const [showGallery, setShowGallery] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+
+  useEffect(() => {
+    const timeout1 = setTimeout(() => {
+      setShowTitle(false);      // Fade out title
+    }, 3500); // display title for 3.5s
+
+    const timeout2 = setTimeout(() => {
+      setShowLogo(true);        // Show logo after title disappears
+    }, 3800); // small delay after fade out
+
+    const timeout3 = setTimeout(() => {
+      setShowGallery(true);     // Then fade in gallery
+    }, 3800);
+
+    return () => {
+      clearTimeout(timeout1);
+      clearTimeout(timeout2);
+      clearTimeout(timeout3);
+    };
+  }, []);
 
   const openImage = (src) => {
     setSelectedImage(src);
@@ -39,29 +64,35 @@ export const Hero = () => {
   };
 
   return (
-    <div id="home" className="bg-[#cecbc4] h-dvh w-screen flex items-center justify-center relative overflow-hidden">
-      <img className="absolute z-10 h-[700px] w-[700px] -left-28 -bottom-36" src="/photos/LOGO.png" alt="" />
-      <h1 className="font-sans absolute z-10 left-1/3 bottom-40 text-3xl">Selected works over the years.</h1>
+    <div id="home" className="bg-[#e4dcc7] h-dvh w-screen flex items-center justify-center relative overflow-hidden">
+
+      {/**Text */}
+      {showTitle && (<h1 className="font-helvetica text-[#000000] absolute z-10 text-2xl md:text-3xl text-center px-4 animate-fadeOut">Selected works over the years.</h1>)}
+
+      {/** LOGO */}
+      {showLogo && (<img className="absolute z-10 w-64 h-64 md:w-[450px] md:h-[450px] md:-left-20 md:-bottom-24 bottom-10 opacity-10 pointer-events-none animate-fadeInRight"
+        src={`${prefix}/photos/LOGO.png`} alt="" />)}
 
       {/* Gallery */}
-      <div className="flex w-full h-full object-contain items-center justify-between">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {imagePaths.map((column, colIndex) => (
-            <div key={colIndex} className="grid gap-4">
-              {column.map((src, imgIndex) => (
-                <div key={imgIndex}>
-                  <img
-                    src={src}
-                    alt=""
-                    className={imageClass + ' cursor-pointer'}
-                    onClick={() => openImage(src)}
-                  />
-                </div>
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
+      {showGallery && (
+        <div className="flex w-full h-full object-contain items-center justify-center overflow-hidden">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 animate-fadeInUp">
+            {imagePaths.map((column, colIndex) => (
+              <div key={colIndex} className="grid gap-4">
+                {column.map((src, imgIndex) => (
+                  <div key={imgIndex}>
+                    <img
+                      src={src}
+                      alt=""
+                      className={imageClass + ' cursor-pointer'}
+                      onClick={() => openImage(src)}
+                    />
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>)}
 
       {/* Modal */}
       {selectedImage && (

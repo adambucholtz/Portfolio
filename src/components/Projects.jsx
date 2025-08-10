@@ -1,39 +1,41 @@
 import React, { useState } from 'react'
 
+const prefix = import.meta.env.BASE_URL;
+
 const projectData = [
   {
     title: "The Observatory",
     description:
       "The design and concept of this work was ...",
-    image: "/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-1.jpeg",
+    image: `${prefix}/photos/FALL THIRD YEAR - Fan-Bridge/Fan-Bridge-1.jpeg`,
     link: "#Project_fan_bridge",
   },
   {
     title: "Network - Group Work",
     description:
       "The Network addresses the desired agency sought after by the target demographic of temporary occupants...",
-    image: "/photos/CONSTRUCTION SET - Network/Network1.png",
+    image: `${prefix}/photos/CONSTRUCTION SET - Network/Network1.png`,
     link: "#Project_network",
   },
   {
     title: "Shift",
     description:
       "Basis of the design was formulated in exercise one through photographing a tree resembling that of a...",
-    image: "/photos/SPRING SECOND YEAR - Shift/Shift-1.png",
+    image: `${prefix}/photos/SPRING SECOND YEAR - Shift/Shift-1.png`,
     link: "#Project_shift",
   },
   {
     title: "Leimert Park Community Arts Center",
     description:
       "The main idea of this project is exploring the variation of the grid in previous renditions to develop varying spaces, depth, and...",
-    image: "/photos/FALL SECOND YEAR/Leimert-1.png",
+    image: `${prefix}/photos/FALL SECOND YEAR/Leimert-1.png`,
     link: "#Project_leimert",
   },
   {
     title: "Oasis",
     description:
       "When you think about the Oasis, it evokes strong feelings of...",
-    image: "/photos/THIRD YEAR SPRING - Oasis/Oasis-1.jpg",
+    image: `${prefix}/photos/THIRD YEAR SPRING - Oasis/Oasis-1.jpg`,
     link: "#Project_oasis",
   },
 ];

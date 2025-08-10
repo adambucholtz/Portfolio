@@ -1,5 +1,7 @@
 import React from 'react'
 
+const prefix = import.meta.env.BASE_URL;
+
 export const About = () => {
   return (
     <div id="about" class="min-h-screen w-screen px-4 py-10 bg-gray-100">
@@ -11,23 +13,24 @@ export const About = () => {
       <div class="flex-center flex-col lg:flex-row items-center justify-center gap-12 max-w-7xl mx-auto">
         {/**Left side */}
         <div className="relative">
-          <img src="/photos/Ponoma-Logo.png" alt="" className="absolute -bottom-5 -left-5 w-[30%] h[30%]"></img>
-          <img src="/photos/adam-portrait.jpg" alt="..." class="w-[480px] h-[640px] object-cover rounded-md shadow-lg"></img>
-          
+          <img src={`${prefix}/photos/Ponoma-Logo.png`} alt="" className="absolute -bottom-5 -left-5 w-[30%] h[30%]"></img>
+          <img src={`${prefix}/photos/adam-portrait.jpg`} alt="..." class="w-[480px] h-[640px] object-cover rounded-md shadow-lg"></img>
+
         </div>
         {/**Right Side */}
         <div class="w-full max-w-md text-lg leading-relaxed text-gray-700">
           <h1 className="font-sans">
-            Born and raised on the central coast, I, <b>Adam Bucholtz</b>, am currently a student attending California
-            Polytechnic University Pomona pursuing a Bachelors of Architecture. I look forward to working on design that
-            emphasizes the needs of the public and the communities he serves as well as
-            unconventional applications of architecture.
+            Born and raised on the central coast, I, <b>Adam Bucholtz</b>, am currently a
+            student attending California Polytechnic University Pomona pursuing a
+            Bachelors of Architecture. I look forward to working on design that
+            emphasizes the needs of the public as well as unconventional applications of architecture.
             <br />
             <br />
-            Through my studies, I have also developed an
+            Through my studies, I have developed an
             affinity for materiality, texture, detail, and construction.
-            In my personal life, I enjoy spending time with my family of 6, running a 5k,
-            and pursuing fluency in Spanish.
+            In my personal life, I enjoy spending time with my family
+            of 6, running a 5k, and pursuing fluency in Spanish.
+
           </h1>
           {/* Software Proficiency */}
           <div className="mt-8">

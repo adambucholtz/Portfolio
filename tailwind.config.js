@@ -11,6 +11,7 @@ export default {
   ],
   theme: {
     extend: {
+      
       fontFamily: {
         'quint': ['Quintessential', 'sans-serif'],
         'tinos': ['Tinos', 'sans-serif'],
