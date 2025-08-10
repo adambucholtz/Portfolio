@@ -67,16 +67,16 @@ export const Hero = () => {
     <div id="home" className="bg-[#e4dcc7] h-dvh w-screen flex items-center justify-center relative overflow-hidden">
 
       {/**Text */}
-      {showTitle && (<h1 className="font-helvetica text-[#000000] absolute z-10 text-3xl animate-fadeOut">Selected works over the years.</h1>)}
+      {showTitle && (<h1 className="font-helvetica text-[#000000] absolute z-10 text-2xl md:text-3xl text-center px-4 animate-fadeOut">Selected works over the years.</h1>)}
 
       {/** LOGO */}
-      {showLogo && (<img className="absolute z-10 h-[500px] w-[500px] -left-20 -bottom-24 opacity-10 pointer-events-none animate-fadeInRight"
+      {showLogo && (<img className="absolute z-10 w-64 h-64 md:w-[500px] md:h-[500px] md:-left-20 md:-bottom-24 bottom-10 opacity-10 pointer-events-none animate-fadeInRight"
         src={`${prefix}/photos/LOGO.png`} alt="" />)}
 
       {/* Gallery */}
       {showGallery && (
-        <div className="flex w-full h-full object-contain items-center justify-between ">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 animate-fadeInUp">
+        <div className="flex w-full h-full object-contain items-center justify-center overflow-hidden">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 animate-fadeInUp">
             {imagePaths.map((column, colIndex) => (
               <div key={colIndex} className="grid gap-4">
                 {column.map((src, imgIndex) => (
