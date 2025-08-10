@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import 'flowbite'
 
 const prefix = import.meta.env.BASE_URL;
@@ -30,7 +30,30 @@ const imageClass =
   'h-full max-w-full rounded-lg opacity-85 hover:opacity-100 hover:scale-105 hover:shadow-2xl transition-all duration-500 ease-in-out';
 
 export const Hero = () => {
+  const [showTitle, setShowTitle] = useState(true);
+  const [showLogo, setShowLogo] = useState(false);
+  const [showGallery, setShowGallery] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+
+  useEffect(() => {
+    const timeout1 = setTimeout(() => {
+      setShowTitle(false);      // Fade out title
+    }, 3000); // display title for 4s
+
+    const timeout2 = setTimeout(() => {
+      setShowLogo(true);        // Show logo after title disappears
+    }, 3800); // small delay after fade out
+
+    const timeout3 = setTimeout(() => {
+      setShowGallery(true);     // Then fade in gallery
+    }, 3800);
+
+    return () => {
+      clearTimeout(timeout1);
+      clearTimeout(timeout2);
+      clearTimeout(timeout3);
+    };
+  }, []);
 
   const openImage = (src) => {
     setSelectedImage(src);
@@ -42,29 +65,34 @@ export const Hero = () => {
 
   return (
     <div id="home" className="bg-[#e4dcc7] h-dvh w-screen flex items-center justify-center relative overflow-hidden">
-      <img className="absolute z-10 h-[700px] w-[700px] -left-28 -bottom-36 opacity-10 pointer-events-none animate-fadeIn delay-0" 
-      src={`${prefix}/photos/LOGO.png`} alt="" />
-      <h1 className="font-sans absolute z-10 left-1/3 bottom-40 text-3xl animate-fadeIn delay-100">Selected works over the years.</h1>
+
+      {/**Text */}
+      {showTitle && (<h1 className="font-sans absolute z-10 text-3xl animate-fadeOut">Selected works over the years.</h1>)}
+
+      {/** LOGO */}
+      {showLogo && (<img className="absolute z-10 h-[500px] w-[500px] -left-20 -bottom-24 opacity-10 pointer-events-none animate-fadeInRight"
+        src={`${prefix}/photos/LOGO.png`} alt="" />)}
 
       {/* Gallery */}
-      <div className="flex w-full h-full object-contain items-center justify-between ">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 animate-fadeIn2">
-          {imagePaths.map((column, colIndex) => (
-            <div key={colIndex} className="grid gap-4">
-              {column.map((src, imgIndex) => (
-                <div key={imgIndex}>
-                  <img
-                    src={src}
-                    alt=""
-                    className={imageClass + ' cursor-pointer'}
-                    onClick={() => openImage(src)}
-                  />
-                </div>
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
+      {showGallery && (
+        <div className="flex w-full h-full object-contain items-center justify-between ">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 animate-fadeInUp">
+            {imagePaths.map((column, colIndex) => (
+              <div key={colIndex} className="grid gap-4">
+                {column.map((src, imgIndex) => (
+                  <div key={imgIndex}>
+                    <img
+                      src={src}
+                      alt=""
+                      className={imageClass + ' cursor-pointer'}
+                      onClick={() => openImage(src)}
+                    />
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>)}
 
       {/* Modal */}
       {selectedImage && (
