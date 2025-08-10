@@ -12,7 +12,6 @@ const oasisGallery = [
   "Oasis-8.jpg",
   "Oasis-2.jpg",
   "Oasis-4.jpg",
-  "Oasis-5.jpg",
   "Oasis-10.jpg",
 ];
 
