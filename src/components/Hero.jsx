@@ -38,7 +38,7 @@ export const Hero = () => {
   useEffect(() => {
     const timeout1 = setTimeout(() => {
       setShowTitle(false);      // Fade out title
-    }, 3000); // display title for 4s
+    }, 3500); // display title for 3.5s
 
     const timeout2 = setTimeout(() => {
       setShowLogo(true);        // Show logo after title disappears
@@ -67,7 +67,7 @@ export const Hero = () => {
     <div id="home" className="bg-[#e4dcc7] h-dvh w-screen flex items-center justify-center relative overflow-hidden">
 
       {/**Text */}
-      {showTitle && (<h1 className="font-sans absolute z-10 text-3xl animate-fadeOut">Selected works over the years.</h1>)}
+      {showTitle && (<h1 className="font-helvetica text-[#000000] absolute z-10 text-3xl animate-fadeOut">Selected works over the years.</h1>)}
 
       {/** LOGO */}
       {showLogo && (<img className="absolute z-10 h-[500px] w-[500px] -left-20 -bottom-24 opacity-10 pointer-events-none animate-fadeInRight"
